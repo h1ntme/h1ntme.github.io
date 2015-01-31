@@ -1,6 +1,6 @@
 # Site settings
 title: H1NT.me
-email: your-email@domain.com
+email: root@h1nt.me
 permalink: /:title
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
