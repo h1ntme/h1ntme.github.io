@@ -4,7 +4,7 @@
 		searchOnThisPage.startSearchingLength = 2; // search for text which contains two or more characters  
 		searchOnThisPage.init();
     
-    $('#close-all').click(function() {
+  $('#close-all').click(function() {
     $(".description").slideUp(300);
   });
   $('#open-all').click(function() {
@@ -13,5 +13,6 @@
   $('.cardName').click(function() {
     $(this).next('.description').slideToggle(300);
   });
+  
   
 });
