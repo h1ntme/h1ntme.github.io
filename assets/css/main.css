@@ -1,0 +1,326 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:link { /*добавил это из-за ссылок в метро*/
+	text-decoration: none; 
+}
+
+.cardName{
+display: block;
+width: 100%;
+color: #fff;
+background-color: #6e8ec7;
+border-color: #2e6da4;
+text-decoration: none;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+cursor: pointer;
+}
+.cardName:hover, .cardName:focus{
+text-decoration:none;
+color: #fff;
+}
+.metro{
+	background-color:#5B8FCA;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.metro p{
+	width: 80px;
+	margin: 0 auto;
+}
+.metro img{
+    padding-top: 49px;
+}
+#slogan{
+font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+color:#5B8FCA;
+font-size: 18px;
+}
+.metro h2{
+font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+color: #fff;
+font-size:18px;
+text-transform: uppercase;
+font-weight:bold;
+padding-left:1px;
+}
+
+/*все что ниже добавил я! 28.01.2015 300am*/
+
+body {
+	background: #f1f1f1;
+}
+
+.card {
+	margin-top: 18px;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td {
+   background-color: #ffffff;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td {
+   background-color: #f1f1f1;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td:nth-child(2n) {
+   background-color: #f2f2f2;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td:nth-child(2n) {
+   background-color: #e5e5e5;
+}
+
+.table-striped > tbody > tr > td, 
+.table-striped > tbody > tr > th {
+border: none;
+}
+
+/*заголовки внутри таблиц предлагаю заключать в <th>, ниже стиль*/
+
+.table-striped > tbody > tr > th {
+	border-bottom: 1px solid #6e8ec7;
+	text-indent: 3em;
+	color: #6e8ec7;
+	font-weight: bold;
+	background: #fff;
+}
+
+.bg-info {
+	background: none;
+	font-weight: bold;
+}
+
+.control {
+	padding: 0;
+	margin: 15px 0 0 0;
+	width: 50px;
+	height: 50px;
+	line-height: 1em;
+	color: #e5e5e5;
+	font-size: 3em;
+	font-weight: bold;
+	background: #5B8FCA;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: inline-block;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.close-all:first-child {	
+	line-height: 1.2em;
+}
+
+.close-all:hover {
+	background: #e5e5e5;
+	color: #fff;
+}
+
+/*все что ниже -написал я для index.html*/
+
+.header {
+	border-top: 2px solid #5B8FCA;
+	border-bottom: none;
+	background: #f1f1f1;
+	padding: 0px 15px;
+	height: 56px;
+	}
+	
+
+.header .nav-pills {
+	margin-top: 5px;
+}
+	
+/*.navbar-default {
+	border-top: 2px solid #5B8FCA;
+	border-bottom: none;
+	background: #f1f1f1;
+	padding: 10px 10px;
+	height: 70px;
+}*/
+	
+.control-lang {
+	background:#5B8FCA;
+	width: 50px;
+	}
+
+.control-lang:hover, .control-lang a:hover, .control-lang a:focus{
+	background:#5B8FCA !important;
+}
+
+.control-lang a {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color:#fff;
+	font-size: 18px;
+}
+
+.container-index {
+	margin-top: 50px;
+}
+
+.container-others {
+	margin-top: 25px;
+}
+
+.container-others h1 {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: #5B8FCA;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.row-others {
+	margin-top: 33px;
+}
+
+.col-group-left {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: #5B8FCA;
+	font-size:50px;
+	font-weight: bold;
+}
+
+.col-group-right {
+	border-left: solid 4px #5B8FCA;
+}
+
+span.metro {
+	display: inline-block;
+	padding: 6px 10px;
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: #fff;
+	font-size:18px;	
+	margin: 5px;
+}
+
+.col-metro {
+	padding-right: 5px;
+	padding-left: 5px;
+	margin:0;
+}
+
+
+.footer {
+  /* Set the fixed height of the footer here */
+  margin: 40px 0 20px 0;
+}
+
+.footer .col-md-2 img {
+	margin: 0 20px;
+}
+
+.copy{
+	color: #5B8FCA;
+	font-size: 24px;
+	font-weight:100;
+}
+
+.footer .logo{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight:bold;
+}
+
+.container {
+	margin-top: 70px;
+}
+
+.metro-nav-btn {
+	display:inline-block;
+	background:#5B8FCA;
+	width: 50px;
+	border: none;
+	border-radius: 0;
+	}
+
+.metro-nav-btn:hover, .metro-nav-btn a:hover, .metro-nav-btn a:focus{
+	background:#5B8FCA !important;
+}
+
+.metro-nav-btn a {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color:#fff;
+	font-size: 18px;
+}
+
+.nav-pills .metro-nav-btn:nth-child(3) {
+	margin-right: 15px;
+}
+
+ul.navbar-nav {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.navbar-nav form {
+	border-left: 1px solid #5B8FCA;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.navbar-nav form > input {
+	border: none;	
+	color: #5B8FCA;
+	height: 30px;
+	text-indent: 5px;
+	background: #f5f5f5;
+}
+
+.navbar-nav form > button {
+	margin-left: 5px;
+	height: 30px;
+	width: 30px;
+}
+
+.navbar-collapse ul.nav-pills {
+	margin-top: 5px;
+}
+
+.navbar-fixed-top {
+	border-top: 2px solid #5B8FCA;
+	border-bottom: none;
+	background: #f1f1f1;
+	padding: 0px 15px;
+	padding-bottom: 5px;
+	min-height: 65px;
+}
+
+.navbar-nav li a:link {
+	color: #5B8FCA;
+}
+
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-brand {
+	margin-top: 10px;
+}
