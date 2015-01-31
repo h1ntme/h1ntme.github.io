@@ -6,7 +6,9 @@ html {
 a:link { /*добавил это из-за ссылок в метро*/
 	text-decoration: none; 
 }
-
+.title{
+text-transform: uppercase;
+}
 .cardName{
 display: block;
 width: 100%;
