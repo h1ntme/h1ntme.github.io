@@ -1,7 +1,7 @@
 # Site settings
 title: H1NT.me
 email: your-email@domain.com
-permalink: /:lang/:title
+permalink: /:title
 languages: ["ru", "en"]
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
