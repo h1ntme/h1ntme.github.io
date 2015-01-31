@@ -7,7 +7,6 @@ a:link { /*добавил это из-за ссылок в метро*/
 	text-decoration: none; 
 }
 .navbar-collapse h1.title{
-border-left: 1px solid #5B8FCA;
 text-transform: uppercase;
 font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 color: #5B8FCA;

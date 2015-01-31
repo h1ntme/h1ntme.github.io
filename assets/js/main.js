@@ -13,6 +13,8 @@
   $('.cardName').click(function() {
     $(this).next('.description').slideToggle(300);
   });
-  
+  $('#hide-all').click(function() {
+    $('.definition').slideToggle(300);
+  });
   
 });
