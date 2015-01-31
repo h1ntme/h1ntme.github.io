@@ -6,7 +6,7 @@ html {
 a:link { /*добавил это из-за ссылок в метро*/
 	text-decoration: none; 
 }
-h1.title{
+.navbar-default .navbar-text h1.title{
 text-transform: uppercase;
 font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 color: #5B8FCA;
