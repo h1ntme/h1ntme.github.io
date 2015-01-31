@@ -1,0 +1,1107 @@
+---
+layout: hints
+title:  css
+lang: en
+categories:
+    - en
+---
+
+  <div id="hints">
+    <div class="container" id="search-area">	<!--добавил id для поиска по странице-->
+     <div class="row">
+		<div class="col-md-6 col-sm-6">		
+			<div id="open-all" class="control">+</div>
+			<div id="close-all" class="control">-</div>
+			<div id="hide-all" class="control">H</div>
+		</div>
+	</div>
+	
+	<!-- начал делать сворачивающие все кнопки, но не въехал, как обращаться конкретно к отдельным объектам - если по классу collapse - это действует на все и получается каша-->
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+<div class="card">
+  <div class="cardName">Resource</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Online</th>
+      </tr>
+      <tr>
+        <td class="term">Official Website</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Download</th>
+      </tr>
+      <tr>
+        <td class="term">CSS in one page [html] (css.su)</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">CSS Cheat Sheet [.png]</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">CSS Cheat Sheet [.pdf]</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">CSS Level 1 Quick Reference DeepX Ltd [.pdf]</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">CSS Level 2 Quick Reference Benjamin Jung [.pdf]</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Related</th>
+      </tr>
+      <tr>
+        <td class="term">Blueprint</td>
+        <td class="definition">Blueprint Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">HTML DOM</td>
+        <td class="definition">HTMl DOM Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">HTML</td>
+        <td class="definition">HTML Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">JavaScript</td>
+        <td class="definition">JavaScript Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">Selenium</td>
+        <td class="definition">Selenium Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">XHTML</td>
+        <td class="definition">XHTML Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">XPath</td>
+        <td class="definition">XPath Cheat Sheet</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Box Model</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Margin</th>
+      </tr>
+      <tr>
+        <td class="term">margin</td>
+        <td class="definition">Sets all the margin properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">margin-bottom</td>
+        <td class="definition">Sets the bottom margin of an element</td>
+      </tr>
+      <tr>
+        <td class="term">margin-left</td>
+        <td class="definition">Sets the left margin of an element</td>
+      </tr>
+      <tr>
+        <td class="term">margin-right</td>
+        <td class="definition">Sets the right margin of an element</td>
+      </tr>
+      <tr>
+        <td class="term">margin-top</td>
+        <td class="definition">Sets the top margin of an element</td>
+      </tr>
+      <tr>
+        <th colspan="2">Padding</th>
+      </tr>
+      <tr>
+        <td class="term">padding</td>
+        <td class="definition">Sets all the padding properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">padding-bottom</td>
+        <td class="definition">Sets the bottom padding of an element</td>
+      </tr>
+      <tr>
+        <td class="term">padding-left</td>
+        <td class="definition">Sets the left padding of an element</td>
+      </tr>
+      <tr>
+        <td class="term">padding-right</td>
+        <td class="definition">Sets the right padding of an element</td>
+      </tr>
+      <tr>
+        <td class="term">padding-top</td>
+        <td class="definition">Sets the top padding of an element</td>
+      </tr>
+      <tr>
+        <th colspan="2">Dimension</th>
+      </tr>
+      <tr>
+        <td class="term">height</td>
+        <td class="definition">Sets the height of an element</td>
+      </tr>
+      <tr>
+        <td class="term">width</td>
+        <td class="definition">Sets the width of an element</td>
+      </tr>
+      <tr>
+        <td class="term">max-height</td>
+        <td class="definition">Sets the maximum height of an element</td>
+      </tr>
+      <tr>
+        <td class="term">max-width</td>
+        <td class="definition">Sets the maximum width of an element</td>
+      </tr>
+      <tr>
+        <td class="term">min-height</td>
+        <td class="definition">Sets the minimum height of an element</td>
+      </tr>
+      <tr>
+        <td class="term">min-width</td>
+        <td class="definition">Sets the minimum width of an element</td>
+      </tr>
+      <tr>
+        <th colspan="2">Border and Outline</th>
+      </tr>
+      <tr>
+        <td class="term">border</td>
+        <td class="definition">Sets all the border properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom</td>
+        <td class="definition">Sets all the bottom border properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom-color</td>
+        <td class="definition">Sets the color of the bottom border</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom-style</td>
+        <td class="definition">Sets the style of the bottom border</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom-width</td>
+        <td class="definition">Sets the width of the bottom border</td>
+      </tr>
+      <tr>
+        <td class="term">border-color</td>
+        <td class="definition">Sets the color of the four borders</td>
+      </tr>
+      <tr>
+        <td class="term">border-left</td>
+        <td class="definition">Sets all the left border properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">border-left-color</td>
+        <td class="definition">Sets the color of the left border</td>
+      </tr>
+      <tr>
+        <td class="term">border-left-style</td>
+        <td class="definition">Sets the style of the left border</td>
+      </tr>
+      <tr>
+        <td class="term">border-left-width</td>
+        <td class="definition">Sets the width of the left border</td>
+      </tr>
+      <tr>
+        <td class="term">border-right</td>
+        <td class="definition">Sets all the right border properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">border-right-color</td>
+        <td class="definition">Sets the color of the right border</td>
+      </tr>
+      <tr>
+        <td class="term">border-right-style</td>
+        <td class="definition">Sets the style of the right border</td>
+      </tr>
+      <tr>
+        <td class="term">border-right-width</td>
+        <td class="definition">Sets the width of the right border</td>
+      </tr>
+      <tr>
+        <td class="term">border-style</td>
+        <td class="definition">Sets the style of the four borders</td>
+      </tr>
+      <tr>
+        <td class="term">border-top</td>
+        <td class="definition">Sets all the top border properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">border-top-color</td>
+        <td class="definition">Sets the color of the top border</td>
+      </tr>
+      <tr>
+        <td class="term">border-top-style</td>
+        <td class="definition">Sets the style of the top border</td>
+      </tr>
+      <tr>
+        <td class="term">border-top-width</td>
+        <td class="definition">Sets the width of the top border</td>
+      </tr>
+      <tr>
+        <td class="term">border-width</td>
+        <td class="definition">Sets the width of the four borders</td>
+      </tr>
+      <tr>
+        <td class="term">outline</td>
+        <td class="definition">Sets all the outline properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">outline-color</td>
+        <td class="definition">Sets the color of an outline</td>
+      </tr>
+      <tr>
+        <td class="term">outline-style</td>
+        <td class="definition">Sets the style of an outline</td>
+      </tr>
+      <tr>
+        <td class="term">outline-width</td>
+        <td class="definition">Sets the width of an outline</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom-left-radius</td>
+        <td class="definition">Defines the shape of the border of the bottom-left corner</td>
+      </tr>
+      <tr>
+        <td class="term">border-bottom-right-radius</td>
+        <td class="definition">Defines the shape of the border of the bottom-right corner</td>
+      </tr>
+      <tr>
+        <td class="term">border-image</td>
+        <td class="definition">A shorthand property for setting all the border-image-* properties</td>
+      </tr>
+      <tr>
+        <td class="term">border-image-outset</td>
+        <td class="definition">Specifies the amount by which the border image area extends beyond the border box</td>
+      </tr>
+      <tr>
+        <td class="term">border-image-repeat</td>
+        <td class="definition">Specifies whether the image-border should be repeated, rounded or stretched</td>
+      </tr>
+      <tr>
+        <td class="term">border-image-slice</td>
+        <td class="definition">Specifies the inward offsets of the image-border</td>
+      </tr>
+      <tr>
+        <td class="term">border-image-source</td>
+        <td class="definition">Specifies an image to be used as a border</td>
+      </tr>
+      <tr>
+        <td class="term">border-image-width</td>
+        <td class="definition">Specifies the widths of the image-border</td>
+      </tr>
+      <tr>
+        <td class="term">border-radius</td>
+        <td class="definition">A shorthand property for setting all the four border-*-radius properties</td>
+      </tr>
+      <tr>
+        <td class="term">border-top-left-radius</td>
+        <td class="definition">Defines the shape of the border of the top-left corner</td>
+      </tr>
+      <tr>
+        <td class="term">border-top-right-radius</td>
+        <td class="definition">Defines the shape of the border of the top-right corner</td>
+      </tr>
+      <tr>
+        <td class="term">box-decoration-break</td>
+        <td class="definition">Defines the shape of the border of the top-right corner</td>
+      </tr>
+      <tr>
+        <td class="term">box-shadow</td>
+        <td class="definition">Attaches one or more drop-shadows to the box</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Selectors</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Basic Selectors</th>
+      </tr>
+      <tr>
+        <td class="term">.class</td>
+        <td class="definition">Selects all elements with class=</td>
+      </tr>
+      <tr>
+        <td class="term">#id</td>
+        <td class="definition">Selects the element with id=</td>
+      </tr>
+      <tr>
+        <td class="term">*</td>
+        <td class="definition">Selects all elements</td>
+      </tr>
+      <tr>
+        <td class="term">element</td>
+        <td class="definition">Selects all &lt;p&gt; elements</td>
+      </tr>
+      <tr>
+        <td class="term">element,element</td>
+        <td class="definition">Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+      </tr>
+      <tr>
+        <td class="term">element element</td>
+        <td class="definition">Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+      </tr>
+      <tr>
+        <td class="term">element&gt;element</td>
+        <td class="definition">Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">element+element</td>
+        <td class="definition">Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements</td>
+      </tr>
+      <tr>
+        <td class="term">[attribute]</td>
+        <td class="definition">Selects all elements with a target attribute</td>
+      </tr>
+      <tr>
+        <td class="term">[attribute=value]</td>
+        <td class="definition">Selects all elements with target=</td>
+      </tr>
+      <tr>
+        <td class="term">[attribute~=value]</td>
+        <td class="definition">Selects all elements with a title attribute containing the word </td>
+      </tr>
+      <tr>
+        <td class="term">[attribute|=value]</td>
+        <td class="definition">Selects all elements with a lang attribute value starting with </td>
+      </tr>
+      <tr>
+        <td class="term">element1~element2</td>
+        <td class="definition">Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">[attribute^=value]</td>
+        <td class="definition">Selects every &lt;a&gt; element whose src attribute value begins with </td>
+      </tr>
+      <tr>
+        <td class="term">[attribute$=value]</td>
+        <td class="definition">Selects every &lt;a&gt; element whose src attribute value ends with </td>
+      </tr>
+      <tr>
+        <td class="term">[attribute*=value]</td>
+        <td class="definition">Selects every &lt;a&gt; element whose src attribute value contains the substring </td>
+      </tr>
+      <tr>
+        <th colspan="2">Pseudo-Selectors</th>
+      </tr>
+      <tr>
+        <td class="term">:link</td>
+        <td class="definition">Selects all unvisited links</td>
+      </tr>
+      <tr>
+        <td class="term">:visited</td>
+        <td class="definition">Selects all visited links</td>
+      </tr>
+      <tr>
+        <td class="term">:active</td>
+        <td class="definition">Selects the active link</td>
+      </tr>
+      <tr>
+        <td class="term">:hover</td>
+        <td class="definition">Selects links on mouse over</td>
+      </tr>
+      <tr>
+        <td class="term">:focus</td>
+        <td class="definition">Selects the input element which has focus</td>
+      </tr>
+      <tr>
+        <td class="term">:first-letter</td>
+        <td class="definition">Selects the first letter of every &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:first-line</td>
+        <td class="definition">Selects the first line of every &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:first-child</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the first child of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:before</td>
+        <td class="definition">Insert content before&nbsp; the content of every &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:after</td>
+        <td class="definition">Insert content after every &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:lang(language)</td>
+        <td class="definition">Selects every &lt;p&gt; element with a lang attribute value starting with </td>
+      </tr>
+      <tr>
+        <td class="term">:first-of-type</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:last-of-type</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:only-of-type</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:only-child</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the only child of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:nth-child(n)</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the second child of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:nth-last-child(n)</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+      </tr>
+      <tr>
+        <td class="term">:nth-of-type(n)</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:last-child</td>
+        <td class="definition">Selects every &lt;p&gt; element that is the last child of its parent</td>
+      </tr>
+      <tr>
+        <td class="term">:root</td>
+        <td class="definition">Selects the documentвЂ™s root element</td>
+      </tr>
+      <tr>
+        <td class="term">:empty</td>
+        <td class="definition">Selects every &lt;p&gt; element that has no children (including text nodes)</td>
+      </tr>
+      <tr>
+        <td class="term">:target</td>
+        <td class="definition">Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+      </tr>
+      <tr>
+        <td class="term">:enabled</td>
+        <td class="definition">Selects every enabled &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:disabled</td>
+        <td class="definition">Selects every disabled &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">:checked</td>
+        <td class="definition">Selects every checked &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td class="term">::selection</td>
+        <td class="definition">Selects the portion of an element that is selected by a user</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Style</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Background</th>
+      </tr>
+      <tr>
+        <td class="term">background</td>
+        <td class="definition">Sets all the background properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">background-attachment</td>
+        <td class="definition">Sets whether a background image is fixed or scrolls with the rest of the page</td>
+      </tr>
+      <tr>
+        <td class="term">background-color</td>
+        <td class="definition">Sets the background color of an element</td>
+      </tr>
+      <tr>
+        <td class="term">background-image</td>
+        <td class="definition">Sets the background image for an element</td>
+      </tr>
+      <tr>
+        <td class="term">background-position</td>
+        <td class="definition">Sets the starting position of a background image</td>
+      </tr>
+      <tr>
+        <td class="term">background-repeat</td>
+        <td class="definition">Sets how a background image will be repeated</td>
+      </tr>
+      <tr>
+        <td class="term">background-clip</td>
+        <td class="definition">Specifies the painting area of the background</td>
+      </tr>
+      <tr>
+        <td class="term">background-origin</td>
+        <td class="definition">Specifies the positioning area of the background images</td>
+      </tr>
+      <tr>
+        <td class="term">background-size</td>
+        <td class="definition">Specifies the size of the background images</td>
+      </tr>
+      <tr>
+        <th colspan="2">Color</th>
+      </tr>
+      <tr>
+        <td class="term">opacity</td>
+        <td class="definition">Sets the opacity level for an element</td>
+      </tr>
+      <tr>
+        <th colspan="2">Font</th>
+      </tr>
+      <tr>
+        <td class="term">font</td>
+        <td class="definition">Sets all the font properties in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">font-family</td>
+        <td class="definition">Specifies the font family for text</td>
+      </tr>
+      <tr>
+        <td class="term">font-size</td>
+        <td class="definition">Specifies the font size of text</td>
+      </tr>
+      <tr>
+        <td class="term">font-style</td>
+        <td class="definition">Specifies the font style for text</td>
+      </tr>
+      <tr>
+        <td class="term">font-variant</td>
+        <td class="definition">Specifies whether or not a text should be displayed in a small-caps font</td>
+      </tr>
+      <tr>
+        <td class="term">font-weight</td>
+        <td class="definition">Specifies the weight of a font</td>
+      </tr>
+      <tr>
+        <td class="term">@font-face</td>
+        <td class="definition">A rule that allows websites to download and use fonts other than the </td>
+      </tr>
+      <tr>
+        <td class="term">font-size-adjust</td>
+        <td class="definition">Preserves the readability of text when font fallback occurs</td>
+      </tr>
+      <tr>
+        <td class="term">font-stretch</td>
+        <td class="definition">Selects a normal, condensed, or expanded face from a font family</td>
+      </tr>
+      <tr>
+        <th colspan="2">Positioning</th>
+      </tr>
+      <tr>
+        <td class="term">bottom</td>
+        <td class="definition">Specifies the bottom position of a positioned element</td>
+      </tr>
+      <tr>
+        <td class="term">clear</td>
+        <td class="definition">Specifies which sides of an element where other floating elements are not allowed</td>
+      </tr>
+      <tr>
+        <td class="term">clip</td>
+        <td class="definition">Clips an absolutely positioned element</td>
+      </tr>
+      <tr>
+        <td class="term">cursor</td>
+        <td class="definition">Specifies the type of cursor to be displayed</td>
+      </tr>
+      <tr>
+        <td class="term">display</td>
+        <td class="definition">Specifies how a certain HTML element should be displayed</td>
+      </tr>
+      <tr>
+        <td class="term">float</td>
+        <td class="definition">Specifies whether or not a box should float</td>
+      </tr>
+      <tr>
+        <td class="term">left</td>
+        <td class="definition">Specifies the left position of a positioned element</td>
+      </tr>
+      <tr>
+        <td class="term">overflow</td>
+        <td class="definition">Specifies what happens if content overflows an element's box</td>
+      </tr>
+      <tr>
+        <td class="term">position</td>
+        <td class="definition">Specifies the type of positioning method used for an element (static,relative, absolute or fixed)</td>
+      </tr>
+      <tr>
+        <td class="term">right</td>
+        <td class="definition">Specifies the right position of a positioned element</td>
+      </tr>
+      <tr>
+        <td class="term">top</td>
+        <td class="definition">Specifies the top position of a positioned element</td>
+      </tr>
+      <tr>
+        <td class="term">visibility</td>
+        <td class="definition">Specifies whether or not an element is visible</td>
+      </tr>
+      <tr>
+        <td class="term">z-index</td>
+        <td class="definition">Sets the stack order of a positioned element</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Elements</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Hyperlink</th>
+      </tr>
+      <tr>
+        <td class="term">target</td>
+        <td class="definition">A shorthand property for setting the target-name, target-new, and target-position properties</td>
+      </tr>
+      <tr>
+        <td class="term">target-name</td>
+        <td class="definition">Specifies where to open links (target destination)</td>
+      </tr>
+      <tr>
+        <td class="term">target-new</td>
+        <td class="definition">Specifies whether new destination links should open in a new window or in a new tab of an existing window</td>
+      </tr>
+      <tr>
+        <td class="term">target-position</td>
+        <td class="definition">Specifies where new destination links should be placed</td>
+      </tr>
+      <tr>
+        <th colspan="2">Text</th>
+      </tr>
+      <tr>
+        <td class="term">color</td>
+        <td class="definition">Sets the color of text</td>
+      </tr>
+      <tr>
+        <td class="term">direction</td>
+        <td class="definition">Specifies the text direction/writing direction</td>
+      </tr>
+      <tr>
+        <td class="term">letter-spacing</td>
+        <td class="definition">Increases or decreases the space between characters in a text</td>
+      </tr>
+      <tr>
+        <td class="term">line-height</td>
+        <td class="definition">Sets the line height</td>
+      </tr>
+      <tr>
+        <td class="term">text-align</td>
+        <td class="definition">Specifies the horizontal alignment of text</td>
+      </tr>
+      <tr>
+        <td class="term">text-decoration</td>
+        <td class="definition">Specifies the decoration added to text</td>
+      </tr>
+      <tr>
+        <td class="term">text-indent</td>
+        <td class="definition">Specifies the indentation of the first line in a text-block</td>
+      </tr>
+      <tr>
+        <td class="term">text-transform</td>
+        <td class="definition">Controls the capitalization of text</td>
+      </tr>
+      <tr>
+        <td class="term">unicode-bidi</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">vertical-align</td>
+        <td class="definition">Sets the vertical alignment of an element</td>
+      </tr>
+      <tr>
+        <td class="term">white-space</td>
+        <td class="definition">Specifies how white-space inside an element is handled</td>
+      </tr>
+      <tr>
+        <td class="term">word-spacing</td>
+        <td class="definition">Increases or decreases the space between words in a text</td>
+      </tr>
+      <tr>
+        <td class="term">text-outline</td>
+        <td class="definition">Specifies a text outline</td>
+      </tr>
+      <tr>
+        <td class="term">text-overflow</td>
+        <td class="definition">Specifies what should happen when text overflows the containing element</td>
+      </tr>
+      <tr>
+        <td class="term">text-shadow</td>
+        <td class="definition">Adds shadow to text </td>
+      </tr>
+      <tr>
+        <td class="term">text-wrap</td>
+        <td class="definition">Specifies line breaking rules for text</td>
+      </tr>
+      <tr>
+        <td class="term">word-break</td>
+        <td class="definition">Specifies line breaking rules for non-CJK scripts</td>
+      </tr>
+      <tr>
+        <td class="term">word-wrap</td>
+        <td class="definition">Allows long, unbreakable words to be broken and wrap to the next line</td>
+      </tr>
+      <tr>
+        <th colspan="2">List</th>
+      </tr>
+      <tr>
+        <td class="term">list-style</td>
+        <td class="definition">Sets all the properties for a list in one declaration</td>
+      </tr>
+      <tr>
+        <td class="term">list-style-image</td>
+        <td class="definition">Specifies an image as the list-item marker</td>
+      </tr>
+      <tr>
+        <td class="term">list-style-position</td>
+        <td class="definition">Specifies if the list-item markers should appear inside or outside the content flow</td>
+      </tr>
+      <tr>
+        <td class="term">list-style-type</td>
+        <td class="definition">Specifies the type of list-item marker</td>
+      </tr>
+      <tr>
+        <th colspan="2">Table</th>
+      </tr>
+      <tr>
+        <td class="term">border-collapse</td>
+        <td class="definition">Specifies whether or not table borders should be collapsed</td>
+      </tr>
+      <tr>
+        <td class="term">border-spacing</td>
+        <td class="definition">Specifies the distance between the borders of adjacent cells</td>
+      </tr>
+      <tr>
+        <td class="term">caption-side</td>
+        <td class="definition">Specifies the placement of a table caption</td>
+      </tr>
+      <tr>
+        <td class="term">empty-cells</td>
+        <td class="definition">Specifies whether or not to display borders and background on empty cells in a table</td>
+      </tr>
+      <tr>
+        <td class="term">table-layout</td>
+        <td class="definition">Sets the layout algorithm to be used for a table</td>
+      </tr>
+      <tr>
+        <th colspan="2">Marquee</th>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">CSS3 Box</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Box</th>
+      </tr>
+      <tr>
+        <td class="term">overflow-x</td>
+        <td class="definition">Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area</td>
+      </tr>
+      <tr>
+        <td class="term">overflow-y</td>
+        <td class="definition">Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area</td>
+      </tr>
+      <tr>
+        <td class="term">overflow-style</td>
+        <td class="definition">Specifies the preferred scrolling method for elements that overflow</td>
+      </tr>
+      <tr>
+        <td class="term">rotation</td>
+        <td class="definition">Rotates an element around a given point defined by the rotation-point property</td>
+      </tr>
+      <tr>
+        <th colspan="2">Flexible Box</th>
+      </tr>
+      <tr>
+        <td class="term">box-align</td>
+        <td class="definition">Specifies how to align the child elements of a box</td>
+      </tr>
+      <tr>
+        <td class="term">box-direction</td>
+        <td class="definition">Specifies in which direction the children of a box are displayed</td>
+      </tr>
+      <tr>
+        <td class="term">box-flex</td>
+        <td class="definition">Specifies whether the children of a box is flexible or inflexible in size</td>
+      </tr>
+      <tr>
+        <td class="term">box-flex-group</td>
+        <td class="definition">Assigns flexible elements to flex groups</td>
+      </tr>
+      <tr>
+        <td class="term">box-lines</td>
+        <td class="definition">Specifies whether columns will go onto a new line whenever it runs out of space in the parent box</td>
+      </tr>
+      <tr>
+        <td class="term">box-ordinal-group</td>
+        <td class="definition">Specifies the display order of the child elements of a box</td>
+      </tr>
+      <tr>
+        <td class="term">box-orient</td>
+        <td class="definition">Specifies whether the children of a box should be laid out horizontally or vertically</td>
+      </tr>
+      <tr>
+        <td class="term">box-pack</td>
+        <td class="definition">Specifies the horizontal position in horizontal boxes and the vertical position in vertical boxes</td>
+      </tr>
+      <tr>
+        <th colspan="2">Linebox</th>
+      </tr>
+      <tr>
+        <th colspan="2">Multi-column</th>
+      </tr>
+      <tr>
+        <td class="term">column-count</td>
+        <td class="definition">Specifies the number of columns an element should be divided into</td>
+      </tr>
+      <tr>
+        <td class="term">column-fill</td>
+        <td class="definition">Specifies how to fill columns</td>
+      </tr>
+      <tr>
+        <td class="term">column-gap</td>
+        <td class="definition">Specifies the gap between the columns</td>
+      </tr>
+      <tr>
+        <td class="term">column-rule</td>
+        <td class="definition">A shorthand property for setting all the column-rule-* properties</td>
+      </tr>
+      <tr>
+        <td class="term">column-rule-color</td>
+        <td class="definition">Specifies the color of the rule between columns</td>
+      </tr>
+      <tr>
+        <td class="term">column-rule-style</td>
+        <td class="definition">Specifies the style of the rule between columns</td>
+      </tr>
+      <tr>
+        <td class="term">column-rule-width</td>
+        <td class="definition">Specifies the width of the rule between columns</td>
+      </tr>
+      <tr>
+        <td class="term">column-span</td>
+        <td class="definition">Specifies how many columns an element should span across</td>
+      </tr>
+      <tr>
+        <td class="term">column-width</td>
+        <td class="definition">Specifies the width of the columns</td>
+      </tr>
+      <tr>
+        <td class="term">columns</td>
+        <td class="definition">A shorthand property for setting column-width and column-count</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Animation</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Animation</th>
+      </tr>
+      <tr>
+        <td class="term">@keyframes</td>
+        <td class="definition">Specifies the animation</td>
+      </tr>
+      <tr>
+        <td class="term">animation</td>
+        <td class="definition">A shorthand property for all the animation properties below, except the animation-play-state property</td>
+      </tr>
+      <tr>
+        <td class="term">animation-name</td>
+        <td class="definition">Specifies a name for the @keyframes animation</td>
+      </tr>
+      <tr>
+        <td class="term">animation-duration</td>
+        <td class="definition">Specifies how many seconds or milliseconds an animation takes to complete one cycle</td>
+      </tr>
+      <tr>
+        <td class="term">animation-timing-function</td>
+        <td class="definition">Specifies the speed curve of the animation</td>
+      </tr>
+      <tr>
+        <td class="term">animation-delay</td>
+        <td class="definition">Specifies when the animation will start</td>
+      </tr>
+      <tr>
+        <td class="term">animation-fill-mode</td>
+        <td class="definition">Specifies whether animation properties are applied before and after aniamtion execution</td>
+      </tr>
+      <tr>
+        <td class="term">animation-iteration-count</td>
+        <td class="definition">Specifies the number of times an animation should be played</td>
+      </tr>
+      <tr>
+        <td class="term">animation-direction</td>
+        <td class="definition">Specifies whether or not the animation should play in reverse on alternate cycles</td>
+      </tr>
+      <tr>
+        <td class="term">animation-play-state</td>
+        <td class="definition">Specifies whether the animation is running or paused</td>
+      </tr>
+      <tr>
+        <th colspan="2">2D/3D Transform</th>
+      </tr>
+      <tr>
+        <td class="term">transform</td>
+        <td class="definition">Applies a 2D or 3D transformation to an element</td>
+      </tr>
+      <tr>
+        <td class="term">transform-origin</td>
+        <td class="definition">Allows you to change the position on transformed elements</td>
+      </tr>
+      <tr>
+        <td class="term">transform-style</td>
+        <td class="definition">Specifies how nested elements are rendered in 3D space</td>
+      </tr>
+      <tr>
+        <td class="term">perspective</td>
+        <td class="definition">Specifies the perspective on how 3D elements are viewed</td>
+      </tr>
+      <tr>
+        <td class="term">perspective-origin</td>
+        <td class="definition">Specifies the bottom position of 3D elements</td>
+      </tr>
+      <tr>
+        <td class="term">backface-visibility</td>
+        <td class="definition">Defines whether or not an element should be visible when not facing the screen</td>
+      </tr>
+      <tr>
+        <th colspan="2">Transition</th>
+      </tr>
+      <tr>
+        <td class="term">transition</td>
+        <td class="definition">A shorthand property for setting the four transition properties</td>
+      </tr>
+      <tr>
+        <td class="term">transition-property</td>
+        <td class="definition">Specifies the name of the CSS property the transition effect is for</td>
+      </tr>
+      <tr>
+        <td class="term">transition-duration</td>
+        <td class="definition">Specifies how many seconds or milliseconds a transition effect takes to complete</td>
+      </tr>
+      <tr>
+        <td class="term">transition-timing-function</td>
+        <td class="definition">Specifies the speed curve of the transition effect</td>
+      </tr>
+      <tr>
+        <td class="term">transition-delay</td>
+        <td class="definition">Specifies when the transition effect will start</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Page</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Content for Page Media</th>
+      </tr>
+      <tr>
+        <th colspan="2">Generated Content</th>
+      </tr>
+      <tr>
+        <td class="term">content</td>
+        <td class="definition">Used with the :before and :after pseudo-elements, to insert generated content</td>
+      </tr>
+      <tr>
+        <td class="term">counter-increment</td>
+        <td class="definition">Increments one or more counters</td>
+      </tr>
+      <tr>
+        <td class="term">counter-reset</td>
+        <td class="definition">Creates or resets one or more counters</td>
+      </tr>
+      <tr>
+        <td class="term">quotes</td>
+        <td class="definition">Sets the type of quotation marks for embedded quotations</td>
+      </tr>
+      <tr>
+        <th colspan="2">Page Media</th>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Miscellaneou</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Print</th>
+      </tr>
+      <tr>
+        <td class="term">page-break-after</td>
+        <td class="definition">Sets the page-breaking behavior after an element</td>
+      </tr>
+      <tr>
+        <td class="term">page-break-before</td>
+        <td class="definition">Sets the page-breaking behavior before an element</td>
+      </tr>
+      <tr>
+        <td class="term">page-break-inside</td>
+        <td class="definition">Sets the page-breaking behavior inside an element</td>
+      </tr>
+      <tr>
+        <th colspan="2">Speech</th>
+      </tr>
+      <tr>
+        <th colspan="2">User-interface</th>
+      </tr>
+      <tr>
+        <td class="term">appearance</td>
+        <td class="definition">Allows you to make an element look like a standard user interface element</td>
+      </tr>
+      <tr>
+        <td class="term">box-sizing</td>
+        <td class="definition">Allows you to define certain elements to fit an area in a certain way</td>
+      </tr>
+      <tr>
+        <td class="term">icon</td>
+        <td class="definition">Provides the author the ability to style an element with an iconic equivalent</td>
+      </tr>
+      <tr>
+        <td class="term">nav-down</td>
+        <td class="definition">Specifies where to navigate when using the arrow-down navigation key</td>
+      </tr>
+      <tr>
+        <td class="term">nav-index</td>
+        <td class="definition">Specifies the tabbing order for an element</td>
+      </tr>
+      <tr>
+        <td class="term">nav-left</td>
+        <td class="definition">Specifies where to navigate when using the arrow-left navigation key</td>
+      </tr>
+      <tr>
+        <td class="term">nav-right</td>
+        <td class="definition">Specifies where to navigate when using the arrow-right navigation key</td>
+      </tr>
+      <tr>
+        <td class="term">nav-up</td>
+        <td class="definition">Specifies where to navigate when using the arrow-up navigation key</td>
+      </tr>
+      <tr>
+        <td class="term">outline-offset</td>
+        <td class="definition">Offsets an outline, and draws it beyond the border edge</td>
+      </tr>
+      <tr>
+        <td class="term">resize</td>
+        <td class="definition">Specifies whether or not an element is resizable by the user</td>
+      </tr>
+    </table>
+  </div>
+</div>
+		</div>
+        <div class="col-md-6 col-sm-6">
+
+		</div>
+      </div>
+    </div>
