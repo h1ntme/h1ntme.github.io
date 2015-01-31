@@ -1,0 +1,1419 @@
+---
+layout: hints
+title:  js
+lang: en
+categories:
+    - en
+---
+
+  <div id="hints">
+    <div class="container" id="search-area">	<!--добавил id для поиска по странице-->
+     <div class="row">
+		<div class="col-md-6 col-sm-6">		
+			<div id="open-all" class="control">+</div>
+			<div id="close-all" class="control">-</div>
+			<div id="hide-all" class="control">H</div>
+		</div>
+	</div>
+	
+	<!-- начал делать сворачивающие все кнопки, но не въехал, как обращаться конкретно к отдельным объектам - если по классу collapse - это действует на все и получается каша-->
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+<div class="card">
+  <div class="cardName">Resource</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Online</th>
+      </tr>
+      <tr>
+        <td class="term">Official Website</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Download</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery 1.5 Visual Cheat Sheet [.pdf]</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Related</th>
+      </tr>
+      <tr>
+        <td class="term">AJAX</td>
+        <td class="definition">AJAX Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">CSS</td>
+        <td class="definition">CSS Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">HTML DOM</td>
+        <td class="definition">HTML DOM Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">HTML</td>
+        <td class="definition">HTML Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">JavaScript</td>
+        <td class="definition">JavaScript Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">Prototype</td>
+        <td class="definition">Prototype Cheat Sheet</td>
+      </tr>
+      <tr>
+        <td class="term">XHTML</td>
+        <td class="definition">XHTML Cheat Sheet</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Selectors</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Attribute</th>
+      </tr>
+      <tr>
+        <td class="term">[name|="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).</td>
+      </tr>
+      <tr>
+        <td class="term">[name*="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value containing the a given substring.</td>
+      </tr>
+      <tr>
+        <td class="term">[name~="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.</td>
+      </tr>
+      <tr>
+        <td class="term">[name$="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.</td>
+      </tr>
+      <tr>
+        <td class="term">[name="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value exactly equal to a certain value.</td>
+      </tr>
+      <tr>
+        <td class="term">[name!="value"</td>
+        <td class="definition">Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.</td>
+      </tr>
+      <tr>
+        <td class="term">[name^="value"]</td>
+        <td class="definition">Selects elements that have the specified attribute with a value beginning exactly with a given string.</td>
+      </tr>
+      <tr>
+        <td class="term">[name]</td>
+        <td class="definition">Selects elements that have the specified attribute, with any value.</td>
+      </tr>
+      <tr>
+        <td class="term">[name="value"][name2="value2"]</td>
+        <td class="definition">Matches elements that match all of the specified attribute filters.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Forms</th>
+      </tr>
+      <tr>
+        <td class="term">:button</td>
+        <td class="definition">Selects all button elements and elements of type button.</td>
+      </tr>
+      <tr>
+        <td class="term">:checkbox</td>
+        <td class="definition">Selects all elements of type checkbox.</td>
+      </tr>
+      <tr>
+        <td class="term">:checked</td>
+        <td class="definition">Matches all elements that are checked.</td>
+      </tr>
+      <tr>
+        <td class="term">:disabled</td>
+        <td class="definition">Selects all elements that are disabled.</td>
+      </tr>
+      <tr>
+        <td class="term">:enabled</td>
+        <td class="definition">Selects all elements that are enabled.</td>
+      </tr>
+      <tr>
+        <td class="term">:focus</td>
+        <td class="definition">Selects element if it is currently focused.</td>
+      </tr>
+      <tr>
+        <td class="term">:file</td>
+        <td class="definition">Selects all elements of type file.</td>
+      </tr>
+      <tr>
+        <td class="term">:image</td>
+        <td class="definition">Selects all elements of type image.</td>
+      </tr>
+      <tr>
+        <td class="term">:input</td>
+        <td class="definition">Selects all input, textarea, select and button elements.</td>
+      </tr>
+      <tr>
+        <td class="term">:password</td>
+        <td class="definition">Selects all elements of type password.</td>
+      </tr>
+      <tr>
+        <td class="term">:radio</td>
+        <td class="definition">Selects all elements of type radio.</td>
+      </tr>
+      <tr>
+        <td class="term">:reset</td>
+        <td class="definition">Selects all elements of type reset.</td>
+      </tr>
+      <tr>
+        <td class="term">:selected</td>
+        <td class="definition">Selects all elements that are selected.</td>
+      </tr>
+      <tr>
+        <td class="term">:submit</td>
+        <td class="definition">Selects all elements of type submit.</td>
+      </tr>
+      <tr>
+        <td class="term">:text</td>
+        <td class="definition">Selects all elements of type text.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Basics</th>
+      </tr>
+      <tr>
+        <td class="term">*</td>
+        <td class="definition">Selects all elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.class</td>
+        <td class="definition">Selects all elements with the given class.</td>
+      </tr>
+      <tr>
+        <td class="term">element</td>
+        <td class="definition">Selects all elements with the given tag name.</td>
+      </tr>
+      <tr>
+        <td class="term">#id</td>
+        <td class="definition">Selects a single element with the given id attribute.</td>
+      </tr>
+      <tr>
+        <td class="term">selector1, selectorN, ...</td>
+        <td class="definition">Selects the combined results of all the specified selectors.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Visibility Filters</th>
+      </tr>
+      <tr>
+        <td class="term">:hidden</td>
+        <td class="definition">Selects all elements that are hidden.</td>
+      </tr>
+      <tr>
+        <td class="term">:visible</td>
+        <td class="definition">Selects all elements that are visible.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Basic Filters</th>
+      </tr>
+      <tr>
+        <td class="term">:animated</td>
+        <td class="definition">Select all elements that are in the progress of an animation at the time the selector is run.</td>
+      </tr>
+      <tr>
+        <td class="term">:eq()</td>
+        <td class="definition">Select the element at index n within the matched set.</td>
+      </tr>
+      <tr>
+        <td class="term">:even</td>
+        <td class="definition">Selects even elements, zero-indexed. See also odd.</td>
+      </tr>
+      <tr>
+        <td class="term">:first</td>
+        <td class="definition">Selects the first matched element.</td>
+      </tr>
+      <tr>
+        <td class="term">:gt()</td>
+        <td class="definition">Select all elements at an index greater than index within the matched set.</td>
+      </tr>
+      <tr>
+        <td class="term">:header</td>
+        <td class="definition">Selects all elements that are headers, like h1, h2, h3 and so on.</td>
+      </tr>
+      <tr>
+        <td class="term">:last</td>
+        <td class="definition">Selects the last matched element.</td>
+      </tr>
+      <tr>
+        <td class="term">:lt()</td>
+        <td class="definition">Select all elements at an index less than index within the matched set.</td>
+      </tr>
+      <tr>
+        <td class="term">:not()</td>
+        <td class="definition">Selects all elements that do not match the given selector.</td>
+      </tr>
+      <tr>
+        <td class="term">:odd</td>
+        <td class="definition">Selects odd elements, zero-indexed. See also even.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Child Filters</th>
+      </tr>
+      <tr>
+        <td class="term">:first-child</td>
+        <td class="definition">Selects all elements that are the first child of their parent.</td>
+      </tr>
+      <tr>
+        <td class="term">:last-child</td>
+        <td class="definition">Selects all elements that are the last child of their parent.</td>
+      </tr>
+      <tr>
+        <td class="term">:nth-child()</td>
+        <td class="definition">Selects all elements that are the nth-child of their parent.</td>
+      </tr>
+      <tr>
+        <td class="term">:only-child</td>
+        <td class="definition">Selects all elements that are the only child of their parent.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Content Filters</th>
+      </tr>
+      <tr>
+        <td class="term">:contains()</td>
+        <td class="definition">Select all elements that contain the specified text.</td>
+      </tr>
+      <tr>
+        <td class="term">:empty</td>
+        <td class="definition">Select all elements that have no children (including text nodes).</td>
+      </tr>
+      <tr>
+        <td class="term">:has()</td>
+        <td class="definition">Selects elements which contain at least one element that matches the specified selector.</td>
+      </tr>
+      <tr>
+        <td class="term">:parent</td>
+        <td class="definition">Select all elements that are the parent of another element, including text nodes.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Hierarchy</th>
+      </tr>
+      <tr>
+        <td class="term">parent &gt; child</td>
+        <td class="definition">Selects all direct child elements specified by 'child' of elements specified by 'parent'.</td>
+      </tr>
+      <tr>
+        <td class="term">ancestor descendant</td>
+        <td class="definition">Selects all elements that are descendants of a given ancestor.</td>
+      </tr>
+      <tr>
+        <td class="term">prev + next</td>
+        <td class="definition">Selects all next elements matching 'next' that are immediately preceded by a sibling 'prev'.</td>
+      </tr>
+      <tr>
+        <td class="term">prev ~ siblings</td>
+        <td class="definition">Selects all sibling elements that follow after the 'prev' element, have the same parent, and match the filtering 'siblings' selector.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Attributes / CSS</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Attributes</th>
+      </tr>
+      <tr>
+        <td class="term">.attr()</td>
+        <td class="definition">Get the value of an attribute for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.prop()</td>
+        <td class="definition">Get the value of a property for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.removeAttr()</td>
+        <td class="definition">Remove an attribute from each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.removeProp()</td>
+        <td class="definition">Remove a property for the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.val()</td>
+        <td class="definition">Get the current value of the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">CSS</th>
+      </tr>
+      <tr>
+        <td class="term">.addClass()</td>
+        <td class="definition">Adds the specified class(es) to each of the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.css()</td>
+        <td class="definition">Get the value of a style property for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.cssHooks</td>
+        <td class="definition">Provides a way to hook directly into jQuery to override how particular CSS properties are retrieved or set. Amongst other uses, cssHooks can be used to create custom, browser-normalized properties for CSS3 features such as box-shadows and gradients.</td>
+      </tr>
+      <tr>
+        <td class="term">.hasClass()</td>
+        <td class="definition">Determine whether any of the matched elements are assigned the given class.</td>
+      </tr>
+      <tr>
+        <td class="term">.removeClass()</td>
+        <td class="definition">Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.toggleClass()</td>
+        <td class="definition">Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Dimensions</th>
+      </tr>
+      <tr>
+        <td class="term">.height()</td>
+        <td class="definition">Get the current computed height for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.innerHeight()</td>
+        <td class="definition">Get the current computed height for the first element in the set of matched elements, including padding but not border.</td>
+      </tr>
+      <tr>
+        <td class="term">.innerWidth()</td>
+        <td class="definition">Get the current computed width for the first element in the set of matched elements, including padding but not border.</td>
+      </tr>
+      <tr>
+        <td class="term">.outerHeight()</td>
+        <td class="definition">Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin.</td>
+      </tr>
+      <tr>
+        <td class="term">.outerWidth()</td>
+        <td class="definition">Get the current computed width for the first element in the set of matched elements, including padding and border.</td>
+      </tr>
+      <tr>
+        <td class="term">.width()</td>
+        <td class="definition">Get the current computed width for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Offset</th>
+      </tr>
+      <tr>
+        <td class="term">.offset()</td>
+        <td class="definition">Get the current coordinates of the first element in the set of matched elements, relative to the document.</td>
+      </tr>
+      <tr>
+        <td class="term">.offsetParent()</td>
+        <td class="definition">Get the closest ancestor element that is positioned.</td>
+      </tr>
+      <tr>
+        <td class="term">.position()</td>
+        <td class="definition">Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.</td>
+      </tr>
+      <tr>
+        <td class="term">.scrollLeft()</td>
+        <td class="definition">Get the current horizontal position of the scroll bar for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.scrollTop()</td>
+        <td class="definition">Get the current vertical position of the scroll bar for the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Data</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.data()</td>
+        <td class="definition">Store arbitrary data associated with the specified element.</td>
+      </tr>
+      <tr>
+        <td class="term">.data()</td>
+        <td class="definition">Store arbitrary data associated with the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.hasData()</td>
+        <td class="definition">Determine whether an element has any jQuery data associated with it.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.removeData()</td>
+        <td class="definition">Remove a previously-stored piece of data.</td>
+      </tr>
+      <tr>
+        <td class="term">.removeData()</td>
+        <td class="definition">Remove a previously-stored piece of data.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Manipulation</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Copying</th>
+      </tr>
+      <tr>
+        <td class="term">.clone()</td>
+        <td class="definition">Create a deep copy of the set of matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Insertion, Around</th>
+      </tr>
+      <tr>
+        <td class="term">.wrap()</td>
+        <td class="definition">Wrap an HTML structure around each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.wrapAll()</td>
+        <td class="definition">Wrap an HTML structure around all elements in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.wrapInner()</td>
+        <td class="definition">Wrap an HTML structure around the content of each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Insertion, Inside</th>
+      </tr>
+      <tr>
+        <td class="term">.append()</td>
+        <td class="definition">Insert content, specified by the parameter, to the end of each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.appendTo()</td>
+        <td class="definition">Insert every element in the set of matched elements to the end of the target.</td>
+      </tr>
+      <tr>
+        <td class="term">.html()</td>
+        <td class="definition">Get the HTML contents of the first element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.prepend()</td>
+        <td class="definition">Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.prependTo()</td>
+        <td class="definition">Insert every element in the set of matched elements to the beginning of the target.</td>
+      </tr>
+      <tr>
+        <td class="term">.text()</td>
+        <td class="definition">Get the combined text contents of each element in the set of matched elements, including their descendants.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Insertion, Outside</th>
+      </tr>
+      <tr>
+        <td class="term">.after()</td>
+        <td class="definition">Insert content, specified by the parameter, after each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.before()</td>
+        <td class="definition">Insert content, specified by the parameter, before each element in the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.insertAfter()</td>
+        <td class="definition">Insert every element in the set of matched elements after the target.</td>
+      </tr>
+      <tr>
+        <td class="term">.insertBefore()</td>
+        <td class="definition">Insert every element in the set of matched elements before the target.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Removal</th>
+      </tr>
+      <tr>
+        <td class="term">.detach()</td>
+        <td class="definition">Remove the set of matched elements from the DOM.</td>
+      </tr>
+      <tr>
+        <td class="term">.empty()</td>
+        <td class="definition">Remove all child nodes of the set of matched elements from the DOM.</td>
+      </tr>
+      <tr>
+        <td class="term">.remove()</td>
+        <td class="definition">Remove the set of matched elements from the DOM.</td>
+      </tr>
+      <tr>
+        <td class="term">.unwrap()</td>
+        <td class="definition">Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Replacement</th>
+      </tr>
+      <tr>
+        <td class="term">.replaceAll()</td>
+        <td class="definition">Replace each target element with the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.replaceWith()</td>
+        <td class="definition">Replace each element in the set of matched elements with the provided new content.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Traversing</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Filtering</th>
+      </tr>
+      <tr>
+        <td class="term">.eq()</td>
+        <td class="definition">Reduce the set of matched elements to the one at the specified index.</td>
+      </tr>
+      <tr>
+        <td class="term">.filter()</td>
+        <td class="definition">Reduce the set of matched elements to those that match the selector or pass the function's test.</td>
+      </tr>
+      <tr>
+        <td class="term">.first()</td>
+        <td class="definition">Reduce the set of matched elements to the first in the set.</td>
+      </tr>
+      <tr>
+        <td class="term">.has()</td>
+        <td class="definition">Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.</td>
+      </tr>
+      <tr>
+        <td class="term">.is()</td>
+        <td class="definition">Check the current matched set of elements against a selector and return true if at least one of these elements matches the selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.last()</td>
+        <td class="definition">Reduce the set of matched elements to the final one in the set.</td>
+      </tr>
+      <tr>
+        <td class="term">.map()</td>
+        <td class="definition">Pass each element in the current matched set through a function, producing a new jQuery object containing the return values.</td>
+      </tr>
+      <tr>
+        <td class="term">.not()</td>
+        <td class="definition">Remove elements from the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.slice()</td>
+        <td class="definition">Reduce the set of matched elements to a subset specified by a range of indices.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Miscellaneous Traversing</th>
+      </tr>
+      <tr>
+        <td class="term">.add()</td>
+        <td class="definition">Add elements to the set of matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.andSelf()</td>
+        <td class="definition">Add the previous set of elements on the stack to the current set.</td>
+      </tr>
+      <tr>
+        <td class="term">.contents()</td>
+        <td class="definition">Get the children of each element in the set of matched elements, including text and comment nodes.</td>
+      </tr>
+      <tr>
+        <td class="term">.end()</td>
+        <td class="definition">End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Tree Traversal</th>
+      </tr>
+      <tr>
+        <td class="term">.children()</td>
+        <td class="definition">Get the children of each element in the set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.closest()</td>
+        <td class="definition">Get the first ancestor element that matches the selector, beginning at the current element and progressing up through the DOM tree.</td>
+      </tr>
+      <tr>
+        <td class="term">.find()</td>
+        <td class="definition">Get the descendants of each element in the current set of matched elements, filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.next()</td>
+        <td class="definition">Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.nextAll()</td>
+        <td class="definition">Get all following siblings of each element in the set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.nextUntil()</td>
+        <td class="definition">Get all following siblings of each element up to but not including the element matched by the selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.parent()</td>
+        <td class="definition">Get the parent of each element in the current set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.parents()</td>
+        <td class="definition">Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.parentsUntil()</td>
+        <td class="definition">Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.prev()</td>
+        <td class="definition">Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.prevAll()</td>
+        <td class="definition">Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.prevUntil()</td>
+        <td class="definition">Get all preceding siblings of each element up to but not including the element matched by the selector.</td>
+      </tr>
+      <tr>
+        <td class="term">.siblings()</td>
+        <td class="definition">Get the siblings of each element in the set of matched elements, optionally filtered by a selector.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Events</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Event Object</th>
+      </tr>
+      <tr>
+        <td class="term">event.currentTarget</td>
+        <td class="definition">The current DOM element within the event bubbling phase.</td>
+      </tr>
+      <tr>
+        <td class="term">event.data</td>
+        <td class="definition">The optional data passed to jQuery.fn.bind when the current executing handler was bound.</td>
+      </tr>
+      <tr>
+        <td class="term">event.isDefaultPrevented()</td>
+        <td class="definition">Returns whether event.preventDefault() was ever called on this event object.</td>
+      </tr>
+      <tr>
+        <td class="term">event.isImmediatePropagationStopped()</td>
+        <td class="definition">Returns whether event.stopImmediatePropagation() was ever called on this event object.</td>
+      </tr>
+      <tr>
+        <td class="term">event.isPropagationStopped()</td>
+        <td class="definition">Returns whether event.stopPropagation() was ever called on this event object.</td>
+      </tr>
+      <tr>
+        <td class="term">event.namespace</td>
+        <td class="definition">The namespace specified when the event was triggered.</td>
+      </tr>
+      <tr>
+        <td class="term">event.pageX</td>
+        <td class="definition">The mouse position relative to the left edge of the document.</td>
+      </tr>
+      <tr>
+        <td class="term">event.pageY</td>
+        <td class="definition">The mouse position relative to the top edge of the document.</td>
+      </tr>
+      <tr>
+        <td class="term">event.preventDefault()</td>
+        <td class="definition">If this method is called, the default action of the event will not be triggered.</td>
+      </tr>
+      <tr>
+        <td class="term">event.relatedTarget</td>
+        <td class="definition">The other DOM element involved in the event, if any.</td>
+      </tr>
+      <tr>
+        <td class="term">event.result</td>
+        <td class="definition">The last value returned by an event handler that was triggered by this event, unless the value was undefined.</td>
+      </tr>
+      <tr>
+        <td class="term">event.stopImmediatePropagation()</td>
+        <td class="definition">Prevents other event handlers from being called.</td>
+      </tr>
+      <tr>
+        <td class="term">event.stopPropagation()</td>
+        <td class="definition">Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event.</td>
+      </tr>
+      <tr>
+        <td class="term">event.target</td>
+        <td class="definition">The DOM element that initiated the event.</td>
+      </tr>
+      <tr>
+        <td class="term">event.timeStamp</td>
+        <td class="definition">The difference in milliseconds between the time an event is triggered and January 1, 1970.</td>
+      </tr>
+      <tr>
+        <td class="term">event.type</td>
+        <td class="definition">Describes the nature of the event.</td>
+      </tr>
+      <tr>
+        <td class="term">event.which</td>
+        <td class="definition">For key or button events, this attribute indicates the specific button or key that was pressed.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Mouse Events</th>
+      </tr>
+      <tr>
+        <td class="term">.click()</td>
+        <td class="definition">Bind an event handler to the 'click' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.dblclick()</td>
+        <td class="definition">Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.focusin()</td>
+        <td class="definition">Bind an event handler to the 'focusin' JavaScript event.</td>
+      </tr>
+      <tr>
+        <td class="term">.focusout()</td>
+        <td class="definition">Bind an event handler to the 'focusout' JavaScript event.</td>
+      </tr>
+      <tr>
+        <td class="term">.hover()</td>
+        <td class="definition">Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.mousedown()</td>
+        <td class="definition">Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mouseenter()</td>
+        <td class="definition">Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mouseleave()</td>
+        <td class="definition">Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mousemove()</td>
+        <td class="definition">Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mouseout()</td>
+        <td class="definition">Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mouseover()</td>
+        <td class="definition">Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.mouseup()</td>
+        <td class="definition">Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.toggle()</td>
+        <td class="definition">Bind two or more handlers to the matched elements, to be executed on alternate clicks.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Browser Events</th>
+      </tr>
+      <tr>
+        <td class="term">.error()</td>
+        <td class="definition">Bind an event handler to the 'error' JavaScript event.</td>
+      </tr>
+      <tr>
+        <td class="term">.resize()</td>
+        <td class="definition">Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.scroll()</td>
+        <td class="definition">Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Document Loading</th>
+      </tr>
+      <tr>
+        <td class="term">.holdReady()</td>
+        <td class="definition">Holds or releases the execution of jQuery's ready event.</td>
+      </tr>
+      <tr>
+        <td class="term">.load()</td>
+        <td class="definition">Bind an event handler to the 'load' JavaScript event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ready()</td>
+        <td class="definition">Specify a function to execute when the DOM is fully loaded.</td>
+      </tr>
+      <tr>
+        <td class="term">.unload()</td>
+        <td class="definition">Bind an event handler to the 'unload' JavaScript event.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Event Handler Attachment</th>
+      </tr>
+      <tr>
+        <td class="term">.bind()</td>
+        <td class="definition">Attach a handler to an event for the elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.delegate()</td>
+        <td class="definition">Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.die()</td>
+        <td class="definition">Remove all event handlers previously attached using .live() from the elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.live()</td>
+        <td class="definition">Attach a handler to the event for all elements which match the current selector, now and in the future.</td>
+      </tr>
+      <tr>
+        <td class="term">.off()</td>
+        <td class="definition">Remove an event handler.</td>
+      </tr>
+      <tr>
+        <td class="term">.on()</td>
+        <td class="definition">Attach an event handler function for one or more events to the selected elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.one()</td>
+        <td class="definition">Attach a handler to an event for the elements. The handler is executed at most once per element.</td>
+      </tr>
+      <tr>
+        <td class="term">.trigger()</td>
+        <td class="definition">Execute all handlers and behaviors attached to the matched elements for the given event type.</td>
+      </tr>
+      <tr>
+        <td class="term">.triggerHandler()</td>
+        <td class="definition">Execute all handlers attached to an element for an event.</td>
+      </tr>
+      <tr>
+        <td class="term">.unbind()</td>
+        <td class="definition">Remove a previously-attached event handler from the elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.undelegate()</td>
+        <td class="definition">Remove a handler from the event for all elements which match the current selector, now or in the future, based upon a specific set of root elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Form Events</th>
+      </tr>
+      <tr>
+        <td class="term">.blur()</td>
+        <td class="definition">Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.change()</td>
+        <td class="definition">Bind an event handler to the 'change' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.focus()</td>
+        <td class="definition">Bind an event handler to the 'focus' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.select()</td>
+        <td class="definition">Bind an event handler to the 'select' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.submit()</td>
+        <td class="definition">Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Keyboard Events</th>
+      </tr>
+      <tr>
+        <td class="term">.keydown()</td>
+        <td class="definition">Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.keypress()</td>
+        <td class="definition">Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+      <tr>
+        <td class="term">.keyup()</td>
+        <td class="definition">Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Effects</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Basics</th>
+      </tr>
+      <tr>
+        <td class="term">.hide()</td>
+        <td class="definition">Hide the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.show()</td>
+        <td class="definition">Display the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.toggle()</td>
+        <td class="definition">Display or hide the matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Custom</th>
+      </tr>
+      <tr>
+        <td class="term">.animate()</td>
+        <td class="definition">Perform a custom animation of a set of CSS properties.</td>
+      </tr>
+      <tr>
+        <td class="term">.clearQueue()</td>
+        <td class="definition">Remove from the queue all items that have not yet been run.</td>
+      </tr>
+      <tr>
+        <td class="term">.delay()</td>
+        <td class="definition">Set a timer to delay execution of subsequent items in the queue.</td>
+      </tr>
+      <tr>
+        <td class="term">.dequeue()</td>
+        <td class="definition">Execute the next function on the queue for the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.dequeue()</td>
+        <td class="definition">Execute the next function on the queue for the matched element.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.fx.interval</td>
+        <td class="definition">The rate (in milliseconds) at which animations fire.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.fx.off</td>
+        <td class="definition">Globally disable all animations.</td>
+      </tr>
+      <tr>
+        <td class="term">.queue()</td>
+        <td class="definition">Show the queue of functions to be executed on the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.queue()</td>
+        <td class="definition">Show the queue of functions to be executed on the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.stop()</td>
+        <td class="definition">Stop the currently-running animation on the matched elements.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Fading</th>
+      </tr>
+      <tr>
+        <td class="term">.fadeIn()</td>
+        <td class="definition">Display the matched elements by fading them to opaque.</td>
+      </tr>
+      <tr>
+        <td class="term">.fadeOut()</td>
+        <td class="definition">Hide the matched elements by fading them to transparent.</td>
+      </tr>
+      <tr>
+        <td class="term">.fadeTo()</td>
+        <td class="definition">Adjust the opacity of the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.fadeToggle()</td>
+        <td class="definition">Display or hide the matched elements by animating their opacity.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Sliding</th>
+      </tr>
+      <tr>
+        <td class="term">.slideDown()</td>
+        <td class="definition">Display the matched elements with a sliding motion.</td>
+      </tr>
+      <tr>
+        <td class="term">.slideToggle()</td>
+        <td class="definition">Display or hide the matched elements with a sliding motion.</td>
+      </tr>
+      <tr>
+        <td class="term">.slideUp()</td>
+        <td class="definition">Hide the matched elements with a sliding motion.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Ajax</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Global Ajax Event Handlers</th>
+      </tr>
+      <tr>
+        <td class="term">.ajaxComplete()</td>
+        <td class="definition">Register a handler to be called when Ajax requests complete. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ajaxError()</td>
+        <td class="definition">Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ajaxSend()</td>
+        <td class="definition">Attach a function to be executed before an Ajax request is sent. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ajaxStart()</td>
+        <td class="definition">Register a handler to be called when the first Ajax request begins. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ajaxStop()</td>
+        <td class="definition">Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <td class="term">.ajaxSuccess()</td>
+        <td class="definition">Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Helper Functions</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.param()</td>
+        <td class="definition">Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</td>
+      </tr>
+      <tr>
+        <td class="term">.serialize()</td>
+        <td class="definition">Encode a set of form elements as a string for submission.</td>
+      </tr>
+      <tr>
+        <td class="term">.serializeArray()</td>
+        <td class="definition">Encode a set of form elements as an array of names and values.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Low-Level Interface</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.ajax()</td>
+        <td class="definition">Perform an asynchronous HTTP (Ajax) request.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.ajaxSetup()</td>
+        <td class="definition">Set default values for future Ajax requests.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Shorthand Methods</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.get()</td>
+        <td class="definition">Load data from the server using a HTTP GET request.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.getJSON()</td>
+        <td class="definition">Load JSON-encoded data from the server using a GET HTTP request.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.getScript()</td>
+        <td class="definition">Load a JavaScript file from the server using a GET HTTP request, then execute it.</td>
+      </tr>
+      <tr>
+        <td class="term">.load()</td>
+        <td class="definition">Load data from the server and place the returned HTML into the matched element.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.post()</td>
+        <td class="definition">Load data from the server using a HTTP POST request.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Core</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">jQuery Object</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery()</td>
+        <td class="definition">Accepts a string containing a CSS selector which is then used to match a set of elements.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.noConflict()</td>
+        <td class="definition">Relinquish jQuery's control of the $ variable.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.sub()</td>
+        <td class="definition">Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.when()</td>
+        <td class="definition">Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.</td>
+      </tr>
+      <tr>
+        <th colspan="2">DOM Element Methods</th>
+      </tr>
+      <tr>
+        <td class="term">.get()</td>
+        <td class="definition">Retrieve the DOM elements matched by the jQuery object.</td>
+      </tr>
+      <tr>
+        <td class="term">.index()</td>
+        <td class="definition">Search for a given element from among the matched elements.</td>
+      </tr>
+      <tr>
+        <td class="term">.size()</td>
+        <td class="definition">Return the number of elements in the jQuery object.</td>
+      </tr>
+      <tr>
+        <td class="term">toArray()</td>
+        <td class="definition">Retrieve all the DOM elements contained in the jQuery set, as an array.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Internals</th>
+      </tr>
+      <tr>
+        <td class="term">.jquery</td>
+        <td class="definition">A string containing the jQuery version number.</td>
+      </tr>
+      <tr>
+        <td class="term">.context</td>
+        <td class="definition">The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.error</td>
+        <td class="definition">Takes a string and throws an exception containing it.</td>
+      </tr>
+      <tr>
+        <td class="term">.length</td>
+        <td class="definition">The number of elements in the jQuery object.</td>
+      </tr>
+      <tr>
+        <td class="term">.pushStack()</td>
+        <td class="definition">Add a collection of DOM elements onto the jQuery stack.</td>
+      </tr>
+      <tr>
+        <td class="term">.selector</td>
+        <td class="definition">A selector representing selector originally passed to jQuery().</td>
+      </tr>
+      <tr>
+        <th colspan="2">Deferred Object</th>
+      </tr>
+      <tr>
+        <td class="term">deferred.always()</td>
+        <td class="definition">Add handlers to be called when the Deferred object is either resolved or rejected.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.done()</td>
+        <td class="definition">Add handlers to be called when the Deferred object is resolved.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.fail()</td>
+        <td class="definition">Add handlers to be called when the Deferred object is rejected.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.isRejected()</td>
+        <td class="definition">Determine whether a Deferred object has been rejected.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.isResolved()</td>
+        <td class="definition">Determine whether a Deferred object has been resolved.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.notify()</td>
+        <td class="definition">Call the progressCallbacks on a Deferred object with the given args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.notifyWith()</td>
+        <td class="definition">Call the progressCallbacks on a Deferred object with the given context and args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.pipe()</td>
+        <td class="definition">Utility method to filter and/or chain Deferreds.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.progress()</td>
+        <td class="definition">Add handlers to be called when the Deferred object generates progress notifications.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.promise()</td>
+        <td class="definition">Return a Deferred's Promise object.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.reject()</td>
+        <td class="definition">Reject a Deferred object and call any failCallbacks with the given args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.rejectWith()</td>
+        <td class="definition">Reject a Deferred object and call any failCallbacks with the given context and args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.resolve()</td>
+        <td class="definition">Resolve a Deferred object and call any doneCallbacks with the given args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.resolveWith()</td>
+        <td class="definition">Resolve a Deferred object and call any doneCallbacks with the given context and args.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.state()</td>
+        <td class="definition">Determine the current state of a Deferred object.</td>
+      </tr>
+      <tr>
+        <td class="term">deferred.then()</td>
+        <td class="definition">Add handlers to be called when the Deferred object is resolved or rejected.</td>
+      </tr>
+      <tr>
+        <td class="term">.promise()</td>
+        <td class="definition">Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.</td>
+      </tr>
+      <tr>
+        <th colspan="2">Callbacks Object</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.Callbacks()</td>
+        <td class="definition">A multi-purpose callbacks list object that provides a powerful way to manage callback lists.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.add()</td>
+        <td class="definition">Add a callback or a collection of callbacks to a callback list.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.disable()</td>
+        <td class="definition">Disable a callback list from doing anything more.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.empty()</td>
+        <td class="definition">Remove all of the callbacks from a list.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.fire()</td>
+        <td class="definition">Call all of the callbacks with the given arguments.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.fired()</td>
+        <td class="definition">Determine if the callbacks have already been called at least once.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.fireWith()</td>
+        <td class="definition">Call all callbacks in a list with the given context and arguments.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.has()</td>
+        <td class="definition">Determine whether a supplied callback is in a list.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.lock()</td>
+        <td class="definition">Lock a callback list in its current state.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.locked()</td>
+        <td class="definition">Determine if the callbacks list has been locked.</td>
+      </tr>
+      <tr>
+        <td class="term">callbacks.remove()</td>
+        <td class="definition">Remove a callback or a collection of callbacks from a callback list.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <div class="cardName">Utilities</div>
+  <div class="description">
+    <table class="table table-striped">
+      <tr>
+        <th colspan="2">Utilities</th>
+      </tr>
+      <tr>
+        <td class="term">jQuery.browser</td>
+        <td class="definition">Contains flags for the useragent, read from navigator.userAgent. We recommend against using this property; please try to use feature detection instead (see jQuery.support). jQuery.browser may be moved to a plugin in a future release of jQuery.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.contains()</td>
+        <td class="definition">Check to see if a DOM node is within another DOM node.</td>
+      </tr>
+      <tr>
+        <td class="term">each</td>
+        <td class="definition"></td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.each()</td>
+        <td class="definition">A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.extend()</td>
+        <td class="definition">Merge the contents of two or more objects together into the first object.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.globalEval()</td>
+        <td class="definition">Execute some JavaScript code globally.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.grep()</td>
+        <td class="definition">Finds the elements of an array which satisfy a filter function. The original array is not affected.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.inArray()</td>
+        <td class="definition">Search for a specified value within an array and return its index (or -1 if not found).</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isArray()</td>
+        <td class="definition">Determine whether the argument is an array.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isEmptyObject()</td>
+        <td class="definition">Check to see if an object is empty (contains no properties).</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isFunction()</td>
+        <td class="definition">Determine if the argument passed is a Javascript function object.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isNumeric()</td>
+        <td class="definition">Determines whether its argument is a number.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isPlainObject()</td>
+        <td class="definition">Check to see if an object is a plain object (created using '{}' or 'new Object').</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isWindow()</td>
+        <td class="definition">Determine whether the argument is a window.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.isXMLDoc()</td>
+        <td class="definition">Check to see if a DOM node is within an XML document (or is an XML document).</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.makeArray()</td>
+        <td class="definition">Convert an array-like object into a true JavaScript array.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.map()</td>
+        <td class="definition">Translate all items in an array or array-like object to another array of items.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.merge()</td>
+        <td class="definition">Merge the contents of two arrays together into the first array. </td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.noop()</td>
+        <td class="definition">An empty function.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.now()</td>
+        <td class="definition">Return a number representing the current time.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.parseJSON()</td>
+        <td class="definition">Takes a well-formed JSON string and returns the resulting JavaScript object.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.parseXML()</td>
+        <td class="definition">Parses a string into an XML document.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.proxy()</td>
+        <td class="definition">Takes a function and returns a new one that will always have a particular context.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.support</td>
+        <td class="definition">A collection of properties that represent the presence of different browser features or bugs.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.trim()</td>
+        <td class="definition">Remove the whitespace from the beginning and end of a string.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.type()</td>
+        <td class="definition">Determine the internal JavaScript [[Class]] of an object.</td>
+      </tr>
+      <tr>
+        <td class="term">jQuery.unique()</td>
+        <td class="definition">Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+
+		</div>
+      </div>
+    </div>
