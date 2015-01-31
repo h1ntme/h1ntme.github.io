@@ -27,3 +27,10 @@ defaults:
     values:
       layout: hints
       lang: en
+t:
+  ru:
+    slogan:  "Все шпаргалки в одном месте"
+    search:  "Поиск"
+  en:
+    slogan:  "All Cheat Sheets At One Place"
+    search:  "Search"
