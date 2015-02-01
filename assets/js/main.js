@@ -16,5 +16,9 @@
   $('#hide-all').click(function() {
     $('.definition').slideToggle(300);
   });
+  $('.term').click(function() {
+    $(this).next('.definition').slideDown(300);
+  });
+  
   
 });
