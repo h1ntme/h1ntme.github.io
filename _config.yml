@@ -21,16 +21,14 @@ defaults:
     values:
       layout: hints
       lang: ru
-      categories:
-       - ru
+      category: 'ru'
   -
     scope:
       path: _posts/en
     values:
       layout: hints
       lang: en
-      categories:
-       - en
+      category: 'en'
 t:
   ru:
     slogan:  "Все шпаргалки в одном месте"
