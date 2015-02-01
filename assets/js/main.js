@@ -17,7 +17,7 @@
     $('.definition').slideToggle(300);
   });
   $('.term').click(function() {
-    $(this).next('.definition').slideDown(300);
+    $(this).next('.definition').slideToggle(300);
   });
   
   
