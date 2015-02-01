@@ -6,9 +6,12 @@
   <body>
 
     {% include header.html %}
-		
+		<div id="hints">
+		    <div class="container" id="search-area">	<!--добавил id для поиска по странице-->
+		{% include control.html %}
         {{ content }}
-
+			</div>
+		</div>
     {% include footer.html %}
 
 
