@@ -31,11 +31,13 @@ defaults:
       category: 'en'
 t:
   ru:
+    lang:    "ru"
     slogan:  "Все шпаргалки в одном месте"
     search:  "Поиск"
     other:   "Другие"
     about:   "о проекте"
   en:
+    lang:    "en"
     slogan:  "All Cheat Sheets At One Place"
     search:  "Search"
     other:   "Other"
