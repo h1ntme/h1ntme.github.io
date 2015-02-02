@@ -47,7 +47,7 @@ cursor: pointer;
 text-decoration:none;
 color: #fff;
 }
-.metro{
+.col-metro .metro{
 	background-color:#5B8FCA;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -226,7 +226,8 @@ span.metro {
 	display: inline-block;
 	padding: 6px 10px;
 	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-	color: #fff;
+	color: #5B8FCA;
+	border: solid 1px #5B8FCA;
 	font-size:18px;	
 	margin: 5px;
 }
