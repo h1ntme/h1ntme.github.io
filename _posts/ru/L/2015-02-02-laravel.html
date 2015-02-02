@@ -1,0 +1,3609 @@
+---
+layout: hints
+title:  Laravel
+categories:
+    - ru
+---
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="card">
+            <div class="cardName">Resource</div>
+			<div class="description">
+				<table class="table table-striped">
+				  <tr>
+					<td class="term">Online
+					</td>
+					<td class="definition">
+					  <a href="" target="_blank">
+						<p>Official Website</p>
+					  </a>
+					</td>
+				  </tr>
+				  <tr>
+					<td class="term">Download
+					</td>
+					<td class="definition">
+					  <a href="">
+						<p>link №1</p>
+					  </a>
+					  <a href="">
+						<p>link №2</p>
+					  </a>
+					  <a href="">
+						<p>link №3</p>
+					  </a>
+					</td>
+				  </tr>
+				  <tr>
+					<td class="term">Related
+					</td>
+					<td class="definition">
+					  <a href="">
+						<p>...</p>
+					  </a>
+					  <a href="">
+						<p>...</p>
+					  </a>
+					  <a href="">
+						<p>...</p>
+					  </a>
+					</td>
+				  </tr>
+				</table>
+			</div>
+          </div>
+
+          <div class="card">
+		    <div class="cardName">Artisan</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">php artisan --help OR -h
+					</td>
+					<td class="definition">Displays help for a given command
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --quiet OR -q
+					</td>
+					<td class="definition">Do not output any message
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --version OR -V
+					</td>
+					<td class="definition">Display this application version
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --no-interaction OR -n
+					</td>
+					<td class="definition">Do not ask any interactive question
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --ansi
+					</td>
+					<td class="definition">Force ANSI output
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --no-ansi
+					</td>
+					<td class="definition">Disable ANSI output
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --env
+					</td>
+					<td class="definition">The environment the command should run under
+					</td>
+					</tr><tr>
+					<td class="term">php artisan --verbose
+					</td>
+					<td class="definition">-v|vv|vvv Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+					</td>
+					</tr><tr>
+					<td class="term">php artisan changes
+					</td>
+					<td class="definition">Display the framework change list
+					</td>
+					</tr><tr>
+					<td class="term">php artisan clear-compiled
+					</td>
+					<td class="definition">Remove the compiled class file
+					</td>
+					</tr><tr>
+					<td class="term">php artisan down
+					</td>
+					<td class="definition">Put the application into maintenance mode
+					</td>
+					</tr><tr>
+					<td class="term">php artisan dump-autoload
+					</td>
+					<td class="definition">Regenerate framework autoload files
+					</td>
+					</tr><tr>
+					<td class="term">php artisan env
+					</td>
+					<td class="definition">Display the current framework environment
+					</td>
+					</tr><tr>
+					<td class="term">php artisan help
+					</td>
+					<td class="definition">Displays help for a command
+					</td>
+					</tr><tr>
+					<td class="term">php artisan list
+					</td>
+					<td class="definition">Lists commands
+					</td>
+					</tr><tr>
+					<td class="term">php artisan optimize
+					</td>
+					<td class="definition">Optimize the framework for better performance
+					</td>
+					</tr><tr>
+					<td class="term">php artisan routes
+					</td>
+					<td class="definition">List all registered routes
+					</td>
+					</tr><tr>
+					<td class="term">php artisan serve
+					</td>
+					<td class="definition">Serve the application on the PHP development server
+					</td>
+					</tr><tr>
+					<td class="term">php artisan serve --port 8080
+					</td>
+					<td class="definition">Change the default port
+					</td>
+					</tr><tr>
+					<td class="term">php artisan serve --host 0.0.0.0
+					</td>
+					<td class="definition">Get it to work outside localhost
+					</td>
+					</tr><tr>
+					<td class="term">php artisan tinker
+					</td>
+					<td class="definition">Interact with your application
+					</td>
+					</tr><tr>
+					<td class="term">php artisan up
+					</td>
+					<td class="definition">Bring the application out of maintenance mode
+					</td>
+					</tr><tr>
+					<td class="term">php artisan workbench
+					</td>
+					<td class="definition">Create a new package workbench
+					</td>
+					</tr><tr>
+					<td class="term">php artisan asset:publish [--bench[="vendor/package"]] [--path[="..."]] [package]
+					</td>
+					<td class="definition">Publish a package's assets to the public directory
+					</td>
+					</tr><tr>
+					<td class="term">php artisan auth:reminders-table
+					</td>
+					<td class="definition">Create a migration for the password reminders table
+					</td>
+					</tr><tr>
+					<td class="term">php artisan cache:clear
+					</td>
+					<td class="definition">Flush the application cache
+					</td>
+					</tr><tr>
+					<td class="term">php artisan command:make name [--command[="..."]] [--path[="..."]] [--namespace[="..."]]
+					</td>
+					<td class="definition">Create a new Artisan command (L3:task)
+					</td>
+					</tr><tr>
+					<td class="term">php artisan config:publish
+					</td>
+					<td class="definition">Publish a package's configuration to the application
+					</td>
+					</tr><tr>
+					<td class="term">php artisan controller:make [--bench="vendor/package"]
+					</td>
+					<td class="definition">Create a new resourceful controller
+					</td>
+					</tr><tr>
+					<td class="term">php artisan db:seed [--class[="..."]] [--database[="..."]]
+					</td>
+					<td class="definition">Seed the database with records
+					</td>
+					</tr><tr>
+					<td class="term">php artisan key:generate
+					</td>
+					<td class="definition">Set the application key
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate [--bench="vendor/package"] [--database[="..."]] [--path[="..."]] [--package[="..."]] [--pretend] [--seed]
+					</td>
+					<td class="definition">Database migrations
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:install [--database[="..."]]
+					</td>
+					<td class="definition">Create the migration repository
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:make name [--bench="vendor/package"] [--create] [--package[="..."]] [--path[="..."]] [--table[="..."]]
+					</td>
+					<td class="definition">Create a new migration file
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:refresh [--database[="..."]] [--seed]
+					</td>
+					<td class="definition">Reset and re-run all migrations
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:reset [--database[="..."]] [--pretend]
+					</td>
+					<td class="definition">Rollback all database migrations
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:rollback [--database[="..."]] [--pretend]
+					</td>
+					<td class="definition">Rollback the last database migration
+					</td>
+					</tr><tr>
+					<td class="term">php artisan migrate:publish vendor/package
+					</td>
+					<td class="definition">Publish a package's migrations to migration directory
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:listen [--queue[="..."]] [--delay[="..."]] [--memory[="..."]] [--timeout[="..."]] [connection]
+					</td>
+					<td class="definition">Listen to a given queue
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:subscribe [--type[="..."]] queue url
+					</td>
+					<td class="definition">Subscribe a URL to an Iron.io push queue
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:work [--queue[="..."]] [--delay[="..."]] [--memory[="..."]] [--sleep] [connection]
+					</td>
+					<td class="definition">Process the next job on a queue
+					</td>
+					</tr><tr>
+					<td class="term">php artisan session:table
+					</td>
+					<td class="definition">Create a migration for the session database table
+					</td>
+					</tr><tr>
+					<td class="term">php artisan view:publish [--path[="..."]] package</td>
+					<td class="definition">Publish a package's views to the application
+					</td>
+					</tr>
+					<tr>
+					<td class="term">php artisan tail [--path[="..."]] [--lines[="..."]] [connection]</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Composer</div>
+            <div class="description">
+                <table class="table table-striped">                  
+					<tr>
+					<td class="term">composer create-project laravel/laravel folder_name
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">composer install
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">composer update
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">composer dump-autoload [--optimize]
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">composer self-update</td>
+					<td class="definition"></td>
+					</tr>				  
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Html builder</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">HTML::macro('name', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">HTML::entities($value);
+					</td>
+					<td class="definition">Convert an HTML string to entities
+					</td>
+					</tr><tr>
+					<td class="term">HTML::decode($value);
+					</td>
+					<td class="definition">Convert entities to HTML characters
+					</td>
+					</tr><tr>
+					<td class="term">HTML::script($url, $attributes);
+					</td>
+					<td class="definition">Generate a link to a JavaScript file
+					</td>
+					</tr><tr>
+					<td class="term">HTML::style($url, $attributes);
+					</td>
+					<td class="definition">Generate a link to a CSS file
+					</td>
+					</tr><tr>
+					<td class="term">HTML::image($url, $alt, $attributes);
+					</td>
+					<td class="definition">Generate an HTML image element
+					</td>
+					</tr><tr>
+					<td class="term">HTML::link($url, 'title', $attributes, $secure);
+					</td>
+					<td class="definition">Generate a HTML link
+					</td>
+					</tr><tr>
+					<td class="term">HTML::secureLink($url, 'title', $attributes);
+					</td>
+					<td class="definition">Generate a HTTPS HTML link
+					</td>
+					</tr><tr>
+					<td class="term">HTML::linkAsset($url, 'title', $attributes, $secure);
+					</td>
+					<td class="definition">Generate a HTML link to an asset
+					</td>
+					</tr><tr>
+					<td class="term">HTML::linkSecureAsset($url, 'title', $attributes);
+					</td>
+					<td class="definition">Generate a HTTPS HTML link to an asset
+					</td>
+					</tr><tr>
+					<td class="term">HTML::linkRoute($name, 'title', $parameters, $attributes);
+					</td>
+					<td class="definition">Generate a HTML link to a named route
+					</td>
+					</tr><tr>
+					<td class="term">HTML::linkAction($action, 'title', $parameters, $attributes);
+					</td>
+					<td class="definition">Generate a HTML link to a controller action
+					</td>
+					</tr><tr>
+					<td class="term">HTML::mailto($email, 'title', $attributes);
+					</td>
+					<td class="definition">Generate a HTML link to an email address
+					</td>
+					</tr><tr>
+					<td class="term">HTML::email($email);
+					</td>
+					<td class="definition">Obfuscate an e-mail address to prevent spam-bots from sniffing it
+					</td>
+					</tr><tr>
+					<td class="term">HTML::ol($list, $attributes);
+					</td>
+					<td class="definition">Generate an ordered list of items
+					</td>
+					</tr><tr>
+					<td class="term">HTML::ul($list, $attributes);
+					</td>
+					<td class="definition">Generate an un-ordered list of items
+					</td>
+					</tr><tr>
+					<td class="term">HTML::listing($type, $list, $attributes);
+					</td>
+					<td class="definition">Create a listing HTML element
+					</td>
+					</tr><tr>
+					<td class="term">HTML::listingElement($key, $type, $value);
+					</td>
+					<td class="definition">Create the HTML for a listing element
+					</td>
+					</tr><tr>
+					<td class="term">HTML::nestedListing($key, $type, $value);
+					</td>
+					<td class="definition">Create the HTML for a nested listing attribute
+					</td>
+					</tr><tr>
+					<td class="term">HTML::attributes($attributes);
+					</td>
+					<td class="definition">Build an HTML attribute string from an array
+					</td>
+					</tr><tr>
+					<td class="term">HTML::attributeElement($key, $value);
+					</td>
+					<td class="definition">Build a single attribute element
+					</td>
+					</tr><tr>
+					<td class="term">HTML::obfuscate($value);</td>
+					<td class="definition">Obfuscate a string to prevent spam-bots from sniffing it
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Sessions</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Session::get('key');
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Session::get('key', 'default');
+					</td>
+					<td class="definition">Returns an item from the session</td>
+					</tr>
+					<tr>
+					<td class="term">Session::get('key', function(){ return 'default'; });
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Session::getId();
+					</td>
+					<td class="definition">Get the session ID
+					</td>
+					</tr><tr>
+					<td class="term">Session::put('key', 'value');
+					</td>
+					<td class="definition">Put a key / value pair in the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::push('foo.bar','value');
+					</td>
+					<td class="definition">Push a value into an array in the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::all();
+					</td>
+					<td class="definition">Returns all items from the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::has('key');
+					</td>
+					<td class="definition">Checks if an item is defined
+					</td>
+					</tr><tr>
+					<td class="term">Session::forget('key');
+					</td>
+					<td class="definition">Remove an item from the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::flush();
+					</td>
+					<td class="definition">Remove all of the items from the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::regenerate();
+					</td>
+					<td class="definition">Generate a new session identifier
+					</td>
+					</tr><tr>
+					<td class="term">Session::flash('key', 'value');
+					</td>
+					<td class="definition">Flash a key / value pair to the session
+					</td>
+					</tr><tr>
+					<td class="term">Session::reflash();
+					</td>
+					<td class="definition">Reflash all of the session flash data
+					</td>
+					</tr><tr>
+					<td class="term">Session::keep(array('key1', 'key2'));</td>
+					<td class="definition">Reflash a subset of the current flash data
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Requests</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Request::url();
+					</td>
+					<td class="definition">url: http://xx.com/aa/bb
+					</td>
+					</tr><tr>
+					<td class="term">Request::path();
+					</td>
+					<td class="definition">path: /aa/bb
+					</td>
+					</tr><tr>
+					<td class="term">Request::getRequestUri();
+					</td>
+					<td class="definition">getRequestUri: /aa/bb/?c=d
+					</td>
+					</tr><tr>
+					<td class="term">Request::getClientIp();
+					</td>
+					<td class="definition">Returns user's IP
+					</td>
+					</tr><tr>
+					<td class="term">Request::getUri();
+					</td>
+					<td class="definition">getUri: http://xx.com/aa/bb/?c=d
+					</td>
+					</tr><tr>
+					<td class="term">Request::getQueryString();
+					</td>
+					<td class="definition">getQueryString: c=d
+					</td>
+					</tr><tr>
+					<td class="term">Request::getPort();
+					</td>
+					<td class="definition">Get the port scheme of the request (e.g., 80, 443, etc.)
+					</td>
+					</tr><tr>
+					<td class="term">Request::is('foo/*');
+					</td>
+					<td class="definition">Determine if the current request URI matches a pattern
+					</td>
+					</tr><tr>
+					<td class="term">Request::segment(1);
+					</td>
+					<td class="definition">Get a segment from the URI (1 based index)
+					</td>
+					</tr><tr>
+					<td class="term">Request::header('Content-Type');
+					</td>
+					<td class="definition">Retrieve a header from the request
+					</td>
+					</tr><tr>
+					<td class="term">Request::server('PATH_INFO');
+					</td>
+					<td class="definition">Retrieve a server variable from the request
+					</td>
+					</tr><tr>
+					<td class="term">Request::ajax();
+					</td>
+					<td class="definition">Determine if the request is the result of an AJAX call
+					</td>
+					</tr><tr>
+					<td class="term">Request::secure();
+					</td>
+					<td class="definition">Determine if the request is over HTTPS
+					</td>
+					</tr><tr>
+					<td class="term">Request::method();
+					</td>
+					<td class="definition">Get the request method
+					</td>
+					</tr><tr>
+					<td class="term">Request::isMethod('post');
+					</td>
+					<td class="definition">Checks if the request method is of specified type
+					</td>
+					</tr><tr>
+					<td class="term">Request::instance()->getContent();
+					</td>
+					<td class="definition">Get raw POST data
+					</td>
+					</tr><tr>
+					<td class="term">Request::format();
+					</td>
+					<td class="definition">Get requested response format
+					</td>
+					</tr><tr>
+					<td class="term">Request::isJson();
+					</td>
+					<td class="definition">true if HTTP Content-Type header contains */json
+					</td>
+					</tr><tr>
+					<td class="term">Request::wantsJson();</td>
+					<td class="definition">true if HTTP Accept header is application/json
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Schema</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Schema::create('table', function($table){ $table->increments('id');});
+					</td>
+					<td class="definition">Indicate that the table needs to be created
+					</td>
+					</tr><tr>
+					<td class="term">Schema::connection('foo')->create('table', function($table){});
+					</td>
+					<td class="definition">Specify a Connection
+					</td>
+					</tr><tr>
+					<td class="term">Schema::rename($from, $to);
+					</td>
+					<td class="definition">Rename the table to a given name
+					</td>
+					</tr><tr>
+					<td class="term">Schema::drop('table');
+					</td>
+					<td class="definition">Indicate that the table should be dropped
+					</td>
+					</tr><tr>
+					<td class="term">Schema::dropIfExists('table');
+					</td>
+					<td class="definition">Indicate that the table should be dropped if it exists
+					</td>
+					</tr><tr>
+					<td class="term">Schema::hasTable('table');
+					</td>
+					<td class="definition">Determine if the given table exists
+					</td>
+					</tr><tr>
+					<td class="term">Schema::hasColumn('table', 'column');
+					</td>
+					<td class="definition">Determine if the given table has a given column
+					</td>
+					</tr><tr>
+					<td class="term">Schema::table('table', function($table){});
+					</td>
+					<td class="definition">Update an existing table
+					</td>
+					</tr><tr>
+					<td class="term">$table->renameColumn('from', 'to');
+					</td>
+					<td class="definition">Indicate that the given columns should be renamed
+					</td>
+					</tr><tr>
+					<td class="term">$table->dropColumn(string|array);
+					</td>
+					<td class="definition">Indicate that the given columns should be dropped
+					</td>
+					</tr><tr>
+					<td class="term">$table->engine = 'InnoDB';
+					</td>
+					<td class="definition">The storage engine that should be used for the table
+					</td>
+					</tr><tr>
+					<td class="term">$table->string('name')->after('email');</td>
+					<td class="definition">Only work on MySQL
+					</td>
+					</tr>
+					<tr><th colspan="2">Indexes</th></tr>
+					<tr>
+					<td class="term">$table->string('column')->unique();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->primary('column');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->primary(array('first', 'last'));</td>
+					<td class="definition">Creates a dual primary key</td>
+					</tr>
+					<tr>
+					<td class="term">$table->primary(array('first', 'last'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->unique('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->unique('column', 'key_name');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->unique(array('first', 'last'));</td>
+					<td class="definition">Creates a dual unique index</td>
+					</tr>
+					<tr>
+					<td class="term">$table->unique(array('first', 'last'), 'key_name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->index('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->index('column', 'key_name');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->index(array('first', 'last'));</td>
+					<td class="definition">Creates a dual index</td>
+					</tr>
+					<tr>
+					<td class="term">$table->index(array('first', 'last'), 'key_name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->dropPrimary('table_column_primary');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->dropUnique('table_column_unique');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->dropIndex('table_column_index');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Column Types</th>
+					</tr>
+					<tr>
+					<td class="term">$table->increments('id');</td>
+					<td class="definition">Increments</td>
+					</tr>
+					<tr>
+					<td class="term">$table->bigIncrements('id');</td>
+					<td class="definition">Increments</td>
+					</tr>
+					<tr>
+					<td class="term">$table->index(array('first', 'last'), 'key_name');
+					</td>
+					<td class="definition">Numbers</td>
+					</tr><tr>
+					<td class="term">$table->dropPrimary('table_column_primary');
+					</td>
+					<td class="definition">Numbers</td>
+					</tr><tr>
+					<td class="term">$table->dropUnique('table_column_unique');
+					</td>
+					<td class="definition">Numbers</td>
+					</tr><tr>
+					<td class="term">$table->dropIndex('table_column_index');</td>
+					<td class="definition">Numbers</td>
+					</tr>
+					<tr>
+					<td class="term">$table->char('name', 4);
+					</td>
+					<td class="definition">String and Text</td>
+					</tr><tr>
+					<td class="term">$table->string('email');
+					</td>
+					<td class="definition">String and Text</td>
+					</tr><tr>
+					<td class="term">$table->string('name', 100);
+					</td>
+					<td class="definition">String and Text</td>
+					</tr><tr>
+					<td class="term">$table->text('description');
+					</td>
+					<td class="definition">String and Text</td>
+					</tr><tr>
+					<td class="term">$table->mediumText('description');
+					</td>
+					<td class="definition">String and Text</td>
+					</tr><tr>
+					<td class="term">$table->longText('description');</td>
+					<td class="definition">String and Text</td>
+					</tr>
+					<tr>
+					<td class="term">$table->date('created_at');
+					</td>
+					<td class="definition">Date and Time</td>
+					</tr><tr>
+					<td class="term">$table->dateTime('created_at');
+					</td>
+					<td class="definition">Date and Time</td>
+					</tr><tr>
+					<td class="term">$table->time('sunrise');
+					</td>
+					<td class="definition">Date and Time</td>
+					</tr><tr>
+					<td class="term">$table->timestamp('added_on');
+					</td>
+					<td class="definition">Date and Time</td>
+					</tr><tr>
+					<td class="term">$table->timestamps();</td>
+					<td class="definition">Date and Time</td>
+					</tr>
+					<tr>
+					<td class="term">$table->nullableTimestamps();</td>
+					<td class="definition">Adds created_at and updated_at columns</td>
+					</tr>
+					<tr>
+					<td class="term">$table->binary('data');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->boolean('confirmed');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$table->softDeletes();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->enum('choices', array('foo', 'bar'));</td>
+					<td class="definition">Adds deleted_at column for soft deletes</td>
+					</tr>
+					<tr>
+					<td class="term">$table->rememberToken();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$table->morphs('parent');
+					</td>
+					<td class="definition">Adds remember_token as VARCHAR(100) NULL
+					</td>
+					</tr><tr>
+					<td class="term">->nullable()</td>
+					<td class="definition">Adds INTEGER parent_id and STRING parent_type
+					</td>
+					</tr>
+					<tr>
+					<td class="term">->default($value)</td>
+					<td class="definition">Adds INTEGER parent_id and STRING parent_type
+					</td>
+					</tr>
+					<tr>
+					<td class="term">->unsigned()</td>
+					<td class="definition">Adds INTEGER parent_id and STRING parent_type
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Blade templates</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">@extends('layout.name')
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">@section('name')
+					</td>
+					<td class="definition">Begin a section
+					</td>
+					</tr><tr>
+					<td class="term">@stop
+					</td>
+					<td class="definition">End a section
+					</td>
+					</tr><tr>
+					<td class="term">@show</td>
+					<td class="definition">End a section and yield
+					</td>
+					</tr>
+					<tr>
+					<td class="term">@parent</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">@yield('name')</td>
+					<td class="definition">Show a section in a template</td>
+					</tr>
+					<tr>
+					<td class="term">@yield('name')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@include('view.name')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@include('view.name', array('key' => 'value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@lang('messages.name')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@choice('messages.name', 1);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@if
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@else
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@elseif
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@endif
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@unless
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@endunless
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@for
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@endfor
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@foreach
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@endforeach
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@while
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">@endwhile</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">@forelse($users as $user)</td>
+					<td class="definition">//forelse 4.2 feature</td>
+					</tr>
+					<tr>
+					<td class="term">@empty</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">@endforelse</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">{{ $var }}
+					</td>
+					<td class="definition">Echo content
+					</td>
+					</tr><tr>
+					<td class="term">{{{ $var }}}
+					</td>
+					<td class="definition">Echo escaped content
+					</td>
+					</tr>
+					<tr>
+					<td class="term">{{-- Blade Comment --}}
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">{{{ $name or 'Default' }}}
+					</td>
+					<td class="definition">Echoing Data After Checking For Existence
+					</td>
+					</tr><tr>
+					<td class="term">@{{ This will not be processed by Blade }}</td>
+					<td class="definition">Displaying Raw Text With Curly Braces
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Views</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">View::make('path/to/view');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">View::make('foo/bar')->with('key', 'value');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">View::make('foo/bar')->withKey('value');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">View::make('foo/bar', array('key' => 'value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">View::exists('foo/bar');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">View::share('key', 'value');
+					</td>
+					<td class="definition">Share a value across all views
+					</td>
+					</tr><tr>
+					<td class="term">View::make('foo/bar')->nest('name', 'foo/baz', $data);
+					</td>
+					<td class="definition">Nesting views
+					</td>
+					</tr><tr>
+					<td class="term">View::composer('viewname', function($view){});
+					</td>
+					<td class="definition">Register a view composer
+					</td>
+					</tr><tr>
+					<td class="term">View::composer(array('view1', 'view2'), function($view){});
+					</td>
+					<td class="definition">//Register multiple views to a composer
+					</td>
+					</tr><tr>
+					<td class="term">View::composer('viewname', 'FooComposer');</td>
+					<td class="definition">Register a composer class
+					</td>
+					</tr>
+					<tr>
+					<td class="term">View::creator('viewname', function($view){});</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Forms</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Form::open(array('url' => 'foo/bar', 'method' => 'PUT'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::open(array('route' => 'foo.bar'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::open(array('route' => array('foo.bar', $parameter)));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::open(array('action' => 'FooController@method'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::open(array('action' => array('FooController@method', $parameter)));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::open(array('url' => 'foo/bar', 'files' => true));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::close();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::token();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::model($foo, array('route' => array('foo.bar', $foo->bar)));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Form elements</th>
+					</tr>
+					<tr>
+					<td class="term">Form::label('id', 'Description');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::label('id', 'Description', array('class' => 'foo'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::text('name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::text('name', $value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::text('name', $value, array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::textarea('name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::textarea('name', $value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::textarea('name', $value, array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::hidden('foo', $value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::password('password');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::password('password', array('placeholder' => 'Password'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::email('name', $value, array());
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::file('name', array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::checkbox('name', 'value');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Form::checkbox('name', 'value', true, array('class' => 'name'));</td>
+					<td class="definition">Generating a checkbox that is checked</td>
+					</tr>
+					<tr>
+					<td class="term">Form::radio('name', 'value');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Form::radio('name', 'value', true, array('class' => 'name'));</td>
+					<td class="definition">Generating a radio input that is selected</td>
+					</tr>
+					<tr>
+					<td class="term">Form::select('name', array('key' => 'value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::select('name', array('key' => 'value'), 'key', array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::selectRange('range', 1, 10);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::selectYear('year', 2011, 2015);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::selectMonth('month');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::submit('Submit!', array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::button('name', array('class' => 'name'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::macro('fooField', function(){ return '&lt;input type="custom"/&gt;';});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Form::fooField();</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Input</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Input::get('key');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Input::get('key', 'default');</td>
+					<td class="definition">Default if the key is missing</td>
+					</tr>
+					<tr>
+					<td class="term">Input::all();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Input::only('foo', 'bar');
+					</td>
+					<td class="definition">Only retrieve 'foo' and 'bar' when getting input
+					</td>
+					</tr><tr>
+					<td class="term">Input::except('foo');</td>
+					<td class="definition">Disregard 'foo' when getting input
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Session Input (flash)</th>
+					</tr>
+					<tr>
+					<td class="term">Input::flash();
+					</td>
+					<td class="definition">Flash input to the session
+					</td>
+					</tr><tr>
+					<td class="term">Input::flashOnly('foo', 'bar');
+					</td>
+					<td class="definition">Flash only some of the input to the session
+					</td>
+					</tr><tr>
+					<td class="term">Input::flashExcept('foo', 'baz');
+					</td>
+					<td class="definition">Flash only some of the input to the session
+					</td>
+					</tr><tr>
+					<td class="term">Input::old('key','default_value');</td>
+					<td class="definition">Retrieve an old input item
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Files</th>
+					</tr>
+					<tr>
+					<td class="term">Input::file('filename');
+					</td>
+					<td class="definition">Use a file that's been uploaded
+					</td>
+					</tr><tr>
+					<td class="term">Input::hasFile('filename');
+					</td>
+					<td class="definition">Determine if a file was uploaded
+					</td>
+					</tr><tr>
+					<td class="term">Input::file('name')->getRealPath();</td>
+					<td class="definition">Access file properties
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Input::file('name')->getClientOriginalName();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Input::file('name')->getClientOriginalExtension();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Input::file('name')->getSize();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Input::file('name')->getMimeType();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Input::file('name')->move($destinationPath);
+					</td>
+					<td class="definition">Move an uploaded file
+					</td>
+					</tr><tr>
+					<td class="term">Input::file('name')->move($destinationPath, $fileName);</td>
+					<td class="definition">Move an uploaded file
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Configuration</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Config::get('app.timezone');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Config::get('app.timezone', 'UTC');</td>
+					<td class="definition">//get with Default value</td>
+					</tr>
+					<tr>
+					<td class="term">Config::set('database.default', 'sqlite');</td>
+					<td class="definition">//set Configuration</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Routing</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Route::get('foo', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::get('foo', 'ControllerName@function');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::controller('foo', 'FooController');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">RESTful Controllers</th>
+					</tr>
+					<tr>
+					<td class="term">Route::resource('posts','PostsController');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Route::resource('photo', 'PhotoController',['only' => ['index', 'show']]);</td>
+					<td class="definition">//Specify a subset of actions to handle on the route</td>
+					</tr>
+					<tr>
+					<td class="term">Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Triggering Errors</th>
+					</tr>
+					<tr>
+					<td class="term">App::abort(404);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">App::missing(function($exception){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">throw new NotFoundHttpException;</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Route Parameters</th>
+					</tr>
+					<tr>
+					<td class="term">Route::get('foo/{bar}', function($bar){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::get('foo/{bar?}', function($bar = 'bar'){});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">HTTP Verbs</th>
+					</tr>
+					<tr>
+					<td class="term">Route::any('foo', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::post('foo', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::put('foo', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::patch('foo', function(){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::delete('foo', function(){});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Route::resource('foo', 'FooController');</td>
+					<td class="definition">RESTful actions</td>
+					</tr>
+					<tr>
+					<th colspan="2">Secure Routes</th>
+					</tr>
+					<tr>
+					<td class="term">Route::get('foo', array('https', function(){}));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Route Constraints</th>
+					</tr>
+					<tr>
+					<td class="term">Route::get('foo/{bar}', function($bar){})->where('bar', '[0-9]+');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::get('foo/{bar}/{baz}', function($bar, $baz){})->where(array('bar' => '[0-9]+', 'baz' => '[A-Za-z]'))</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Route::pattern('bar', '[0-9]+')</td>
+					<td class="definition">Set a pattern to be used across routes</td>
+					</tr>
+					<tr>
+					<th colspan="2">Filters</th>
+					</tr>
+					<tr>
+					<td class="term">Route::filter('auth', function(){});
+					</td>
+					<td class="definition">Declare an auth filter
+					</td>
+					</tr><tr>
+					<td class="term">Route::filter('foo', 'FooFilter');</td>
+					<td class="definition">Register a class as a filter
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Route::get('foo', array('before' => 'auth', function(){}));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Route::get('foo', array('before' => 'auth', function(){}));</td>
+					<td class="definition">Routes in this group are guarded by the 'auth' filter</td>
+					</tr>
+					<tr>
+					<td class="term">Route::group(array('before' => 'auth'), function(){});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Route::when('foo/*', 'foo');
+					</td>
+					<td class="definition">Pattern filter
+					</td>
+					</tr><tr>
+					<td class="term">Route::when('foo/*', 'foo', array('post'));</td>
+					<td class="definition">HTTP verb pattern
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Named Routes</th>
+					</tr>
+					<tr>
+					<td class="term">Route::currentRouteName();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Route::get('foo/bar', array('as' => 'foobar', function(){}));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Route Prefixing</th>
+					</tr>
+					<tr>
+					<td class="term">Route::group(array('prefix' => 'foo'), function(){})
+					</td>
+					<td class="definition">This route group will carry the prefix 'foo'
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Route Namespacing</th>
+					</tr>
+					<tr>
+					<td class="term">Route::group(array('namespace' => 'Foo\Bar'), function(){})
+					</td>
+					<td class="definition">This route group will carry the namespace 'Foo\Bar'
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Sub-Domain Routing</th>
+					</tr>
+					<tr>
+					<td class="term">Route::group(array('domain' => '{sub}.example.com'), function(){});</td>
+					<td class="definition">{sub} will be passed to the closure
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Cache</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Cache::put('key', 'value', $minutes);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::add('key', 'value', $minutes);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::forever('key', 'value');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::remember('key', $minutes, function(){ return 'value' });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::rememberForever('key', function(){ return 'value' });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::forget('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::has('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::get('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::get('key', 'default');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::get('key', function(){ return 'default'; });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::tags('my-tag')->put('key','value', $minutes);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::tags('my-tag')->has('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::tags('my-tag')->get('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::tags('my-tag')->forget('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::tags('my-tag')->flush();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::increment('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::increment('key', $amount);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::decrement('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::decrement('key', $amount);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::section('group')->put('key', $value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::section('group')->get('key');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Cache::section('group')->flush();</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Cookies</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Cookie::get('key');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Cookie::get('key', 'default');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Cookie::forever('key', 'value');
+					</td>
+					<td class="definition">Create a cookie that lasts for ever
+					</td>
+					</tr><tr>
+					<td class="term">Cookie::make('key', 'value', 'minutes');
+					</td>
+					<td class="definition">Create a cookie that lasts N minutes
+					</td>
+					</tr><tr>
+					<td class="term">Cookie::queue('key', 'value', 'minutes');
+					</td>
+					<td class="definition">Set a cookie before a response has been created
+					</td>
+					</tr><tr>
+					<td class="term">Cookie::forget('key');
+					</td>
+					<td class="definition">Forget cookie
+					</td>
+					</tr><tr>
+					<td class="term">$response = Response::make('Hello World');
+					</td>
+					<td class="definition">Send a cookie with a response
+					</td>
+					</tr><tr>
+					<td class="term">$response->withCookie(Cookie::make('name', 'value', $minutes));</td>
+					<td class="definition">Add a cookie to the response
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Strings</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Str::ascii($value)</td>
+					<td class="definition">Transliterate a UTF-8 value to ASCII</td>
+					</tr>
+					<tr>
+					<td class="term">Str::camel($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::contains($haystack, $needle)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::endsWith($haystack, $needles)</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Str::finish($value, $cap)</td>
+					<td class="definition">Cap a string with a single instance of a given value.</td>
+					</tr>
+					<tr>
+					<td class="term">Str::is($pattern, $value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::length($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::limit($value, $limit = 100, $end = '...')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::lower($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::words($value, $words = 100, $end = '...')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::plural($value, $count = 2)</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Str::random($length = 16)
+					</td>
+					<td class="definition">Generate a more truly "random" alpha-numeric string.
+					</td>
+					</tr><tr>
+					<td class="term">Str::quickRandom($length = 16)</td>
+					<td class="definition">Generate a "random" alpha-numeric string.
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Str::upper($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::title($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::singular($value)
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::slug($title, $separator = '-')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::snake($value, $delimiter = '_')
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Str::startsWith($haystack, $needles)</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Str::studly($value)</td>
+					<td class="definition">Convert a value to studly caps case.</td>
+					</tr>
+					<tr>
+					<td class="term">Str::macro($name, $macro)</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+                                  
+                    
+        </div>
+		
+		<div class="col-md-6 col-sm-6">
+		
+			<div class="card">
+		    <div class="cardName">App</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">App::environment();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">App::environment('local');</td>
+					<td class="definition">test equal to</td>
+					</tr>
+					<tr>
+					<td class="term">App::runningInConsole();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">App::runningUnitTests();</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Log</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Log::info('info');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Log::info('info',array('context'=>'additional info'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Log::error('error');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Log::warning('warning');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Log::getMonolog();
+					</td>
+					<td class="definition">get monolog instance
+					</td>
+					</tr><tr>
+					<td class="term">Log::listen(function($level, $message, $context) {});
+					</td>
+					<td class="definition">add listener
+					</td>
+					</tr><tr>
+					<td class="term">DB::getQueryLog();</td>
+					<td class="definition">get all ran queries.
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">Localization</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">App::setLocale('en');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Lang::get('messages.welcome');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Lang::get('messages.welcome', array('foo' => 'Bar'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Lang::has('messages.welcome');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Lang::choice('messages.apples', 10);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">trans('messages.welcome');</td>
+					<td class="definition">Lang::get alias</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+          
+          <div class="card">
+		    <div class="cardName">URLs</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">URL::full();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::current();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::previous();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::to('foo/bar', $parameters, $secure);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::action('FooController@method', $parameters, $absolute);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::route('foo', $parameters, $absolute);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::secure('foo/bar', $parameters);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::asset('css/foo.css', $secure);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::secureAsset('css/foo.css');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::isValidUrl('http://example.com');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::getRequest();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::setRequest($request);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::getGenerator();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">URL::setGenerator($generator);</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Files</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">File::exists('path');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">File::get('path');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">File::getRemote('path');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">File::getRequire('path');
+					</td>
+					<td class="definition">Get a file's contents by requiring it
+					</td>
+					</tr><tr>
+					<td class="term">File::requireOnce('path');
+					</td>
+					<td class="definition">Require the given file once
+					</td>
+					</tr><tr>
+					<td class="term">File::put('path', 'contents');
+					</td>
+					<td class="definition">Write the contents of a file
+					</td>
+					</tr><tr>
+					<td class="term">File::append('path', 'data');
+					</td>
+					<td class="definition">Append to a file
+					</td>
+					</tr><tr>
+					<td class="term">File::delete('path');
+					</td>
+					<td class="definition">Delete the file at a given path
+					</td>
+					</tr><tr>
+					<td class="term">File::move('path', 'target');
+					</td>
+					<td class="definition">Move a file to a new location
+					</td>
+					</tr><tr>
+					<td class="term">File::copy('path', 'target');
+					</td>
+					<td class="definition">Copy a file to a new location
+					</td>
+					</tr><tr>
+					<td class="term">File::extension('path');
+					</td>
+					<td class="definition">Extract the file extension from a file path
+					</td>
+					</tr><tr>
+					<td class="term">File::type('path');
+					</td>
+					<td class="definition">Get the file type of a given file
+					</td>
+					</tr><tr>
+					<td class="term">File::size('path');
+					</td>
+					<td class="definition">Get the file size of a given file
+					</td>
+					</tr><tr>
+					<td class="term">File::lastModified('path');
+					</td>
+					<td class="definition">Get the file's last modification time
+					</td>
+					</tr><tr>
+					<td class="term">File::isDirectory('directory');
+					</td>
+					<td class="definition">Determine if the given path is a directory
+					</td>
+					</tr><tr>
+					<td class="term">File::isWritable('path');
+					</td>
+					<td class="definition">Determine if the given path is writable
+					</td>
+					</tr><tr>
+					<td class="term">File::isFile('file');
+					</td>
+					<td class="definition">Determine if the given path is a file
+					</td>
+					</tr><tr>
+					<td class="term">File::glob($patterns, $flag);
+					</td>
+					<td class="definition">Find path names matching a given pattern.
+					</td>
+					</tr><tr>
+					<td class="term">File::files('directory');
+					</td>
+					<td class="definition">Get an array of all files in a directory.
+					</td>
+					</tr><tr>
+					<td class="term">File::allFiles('directory');
+					</td>
+					<td class="definition">Get all of the files from the given directory (recursive).
+					</td>
+					</tr><tr>
+					<td class="term">File::directories('directory');
+					</td>
+					<td class="definition">Get all of the directories within a given directory.
+					</td>
+					</tr><tr>
+					<td class="term">File::makeDirectory('path',  $mode = 0777, $recursive = false);
+					</td>
+					<td class="definition">Create a directory
+					</td>
+					</tr><tr>
+					<td class="term">File::copyDirectory('directory', 'destination', $options = null);
+					</td>
+					<td class="definition">Copy a directory from one location to another
+					</td>
+					</tr><tr>
+					<td class="term">File::deleteDirectory('directory', $preserve = false);
+					</td>
+					<td class="definition">Recursively delete a directory
+					</td>
+					</tr><tr>
+					<td class="term">File::cleanDirectory('directory');</td>
+					<td class="definition">Empty the specified directory of all files and folders
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Events</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Event::fire('foo.bar', array($bar));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::listen('foo.bar', function($bar){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::listen('foo.*', function($bar){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::listen('foo.bar', 'FooHandler', 10);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::listen('foo.bar', 'BarHandler', 5);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::listen('foor.bar', function($event){ return false; });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::queue('foo', array($bar));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::flusher('foo', function($bar){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::flush('foo');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::forget('foo');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Event::subscribe(new FooEventHandler);</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Database</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">DB::connection('connection_name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::statement('drop table users');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::listen(function($sql, $bindings, $time){ code_here; });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::transaction(function(){ transaction_code_here; });</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('users')->remember($time)->get();
+					</td>
+					<td class="definition">Cache a query for $time minutes
+					</td>
+					</tr><tr>
+					<td class="term">DB::raw('sql expression here');</td>
+					<td class="definition">Escape raw input
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Selects</th>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->distinct()->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->select('column as column_alias')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->where('name', '=', 'John')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->whereBetween('column', array(1, 100))->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->whereIn('column', array(1, 2, 3))->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->whereNotIn('column', array(1, 2, 3))->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->whereNull('column')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->whereNotNull('column')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->groupBy('column')->get();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->orderBy('column')->get();</td>
+					<td class="definition">Default Eloquent sort is ascendant</td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->orderBy('column','desc')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->having('count', '>', 100)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->skip(10)->take(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->first();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->pluck('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->lists('column');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->join('table', 'name.id', '=', 'table.id')->select('name.id', 'table.email');</td>
+					<td class="definition">Joins</td>
+					</tr>
+					<tr>
+					<th colspan="2">Inserts, Updates, Deletes</th>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->insert(array('name' => 'John', 'email' => 'john@example.com'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->insertGetId(array('name' => 'John', 'email' => 'john@example.com'));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->insert(array(array('name' => 'John', 'email' => 'john@example.com')array('name' => 'James', 'email' => 'james@example.com')));
+					</td>
+					<td class="definition">Batch insert
+					</td>
+					</tr><tr>
+					<td class="term">DB::table('name')->where('name', '=', 'John')->update(array('email' => 'john@example2.com'));
+					</td>
+					<td class="definition">Update an entry
+					</td>
+					</tr><tr>
+					<td class="term">DB::table('name')->delete();
+					</td>
+					<td class="definition">Delete everything from a table
+					</td>
+					</tr><tr>
+					<td class="term">DB::table('name')->where('id', '>', '10')->delete();</td>
+					<td class="definition">Delete specific records
+					</td>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->truncate();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Aggregates</th>
+					</tr>
+					<tr>
+					<td class="term">DB::table('name')->count();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->max('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->min('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->avg('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->sum('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->increment('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->increment('column', $amount);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->decrement('column');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->decrement('column', $amount);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->remember(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->remember(5, 'cache-key-name')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->cacheTags('my-key')->remember(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">DB::table('name')->cacheTags(array('my-first-key','my-second-key'))->remember(5)->get();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Raw Expressions</th>
+					</tr>
+					<tr>
+					<td class="term">DB::select('select * from users where id = ?', array('value'));
+					</td>
+					<td class="definition">return rows
+					</td>
+					</tr><tr>
+					<td class="term">DB::insert('insert into foo set bar=2');</td>
+					<td class="definition">return nr affected rows
+					</td>
+					</tr>
+					<tr>
+					<td class="term">DB::update('update foo set bar=2');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::delete('delete from bar');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">DB::statement('update foo set bar=2');
+					</td>
+					<td class="definition">returns void
+					</td>
+					</tr><tr>
+					<td class="term">DB::table('name')->select(DB::raw('count(*) as count, column2'))->get();</td>
+					<td class="definition">raw expression inside a statement
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Responses</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">return Response::make($contents);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Response::make($contents, 200);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Response::json(array('key' => 'value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Response::json(array('key' => 'value'))->setCallback(Input::get('callback'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Response::download($filepath);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Response::download($filepath, $filename, $headers);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$response = Response::make($contents, 200);</td>
+					<td class="definition">Create a response and modify a header value</td>
+					</tr>
+					<tr>
+					<td class="term">$response->header('Content-Type', 'application/json');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return $response;</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">return Response::make($content)->withCookie(Cookie::make('key', 'value'));</td>
+					<td class="definition">Attach a cookie to a response</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Redirects</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">return Redirect::to('foo/bar');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::to('foo/bar')->with('key', 'value');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::to('foo/bar')->withInput(Input::get());
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::to('foo/bar')->withInput(Input::except('password'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::to('foo/bar')->withErrors($validator);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">return Redirect::back();
+					</td>
+					<td class="definition">Create a new redirect response to the previous location
+					</td>
+					</tr><tr>
+					<td class="term">return Redirect::route('foobar');</td>
+					<td class="definition">Create a new redirect response to a named route
+					</td>
+					</tr>
+					<tr>
+					<td class="term">return Redirect::route('foobar', array('value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::route('foobar', array('key' => 'value'));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">return Redirect::action('FooController@index');</td>
+					<td class="definition">Create a new redirect response to a controller action</td>
+					</tr>
+					<tr>
+					<td class="term">return Redirect::action('FooController@index');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::action('FooController@baz', array('value'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">return Redirect::action('FooController@baz', array('key' => 'value'));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">return Redirect::intended('foo/bar');</td>
+					<td class="definition">If intended redirect is not defined, defaults to foo/bar.</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">IoC</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">App::bind('foo', function($app){ return new Foo; });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">App::make('foo');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">App::make('FooBar');
+					</td>
+					<td class="definition">If this class exists, it's returned
+					</td>
+					</tr><tr>
+					<td class="term">App::singleton('foo', function(){ return new Foo; });
+					</td>
+					<td class="definition">Register a shared binding in the container
+					</td>
+					</tr><tr>
+					<td class="term">App::instance('foo', new Foo);
+					</td>
+					<td class="definition">Register an existing instance as shared in the container
+					</td>
+					</tr><tr>
+					<td class="term">App::bind('FooRepositoryInterface', 'BarRepository');
+					</td>
+					<td class="definition">Register a binding with the container
+					</td>
+					</tr><tr>
+					<td class="term">App::register('FooServiceProvider');
+					</td>
+					<td class="definition">Register a service provider with the application
+					</td>
+					</tr><tr>
+					<td class="term">App::resolving(function($object){});</td>
+					<td class="definition">Listen for object resolution
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Helpers</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">array_add($array, 'key', 'value');
+					</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">array_build($array, function(){});
+					</td>
+					<td class="definition">Build a new array using a callback
+					</td>
+					</tr><tr>
+					<td class="term">array_divide($array);
+					</td>
+					<td class="definition">Divide an array into two arrays. One with keys and the other with values
+					</td>
+					</tr><tr>
+					<td class="term">array_dot($array);
+					</td>
+					<td class="definition">Flatten a multi-dimensional associative array with dots
+					</td>
+					</tr><tr>
+					<td class="term">array_except($array, array('key'));
+					</td>
+					<td class="definition">Get all of the given array except for a specified array of items
+					</td>
+					</tr><tr>
+					<td class="term">array_fetch($array, 'key');
+					</td>
+					<td class="definition">Fetch a flattened array of a nested array element
+					</td>
+					</tr><tr>
+					<td class="term">array_first($array, function($key, $value){}, $default);
+					</td>
+					<td class="definition">Return the first element in an array passing a given truth test
+					</td>
+					</tr><tr>
+					<td class="term">array_flatten($array);
+					</td>
+					<td class="definition">Strips keys from the array
+					</td>
+					</tr><tr>
+					<td class="term">array_forget($array, 'foo');
+					</td>
+					<td class="definition">Remove one or many array items from a given array using "dot" notation
+					</td>
+					</tr><tr>
+					<td class="term">array_forget($array, 'foo.bar');
+					</td>
+					<td class="definition">Dot notation
+					</td>
+					</tr><tr>
+					<td class="term">array_get($array, 'foo', 'default');</td>
+					<td class="definition">Get an item from an array using "dot" notation
+					</td>
+					</tr>
+					<tr>
+					<td class="term">array_get($array, 'foo.bar', 'default');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">array_only($array, array('key'));
+					</td>
+					<td class="definition">Get a subset of the items from the given array
+					</td>
+					</tr><tr>
+					<td class="term">array_pluck($array, 'key');
+					</td>
+					<td class="definition">Return array of key => values
+					</td>
+					</tr><tr>
+					<td class="term">array_pull($array, 'key');
+					</td>
+					<td class="definition">Return and remove 'key' from array
+					</td>
+					</tr><tr>
+					<td class="term">array_set($array, 'key', 'value');
+					</td>
+					<td class="definition">Set an array item to a given value using "dot" notation
+					</td>
+					</tr><tr>
+					<td class="term">array_set($array, 'key.subkey', 'value');</td>
+					<td class="definition">Dot notation
+					</td>
+					</tr>
+					<tr>
+					<td class="term">array_sort($array, function(){});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">head($array);
+					</td>
+					<td class="definition">First element of an array
+					</td>
+					</tr><tr>
+					<td class="term">last($array);</td>
+					<td class="definition">Last element of an array
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Paths</th>
+					</tr>
+					<tr>
+					<td class="term">app_path();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">public_path();
+					</td>
+					<td class="definition"> Get the path to the public folder
+					</td>
+					</tr><tr>
+					<td class="term">base_path();
+					</td>
+					<td class="definition">App root path
+					</td>
+					</tr><tr>
+					<td class="term">storage_path();</td>
+					<td class="definition">Get the path to the storage folder
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Strings</th>
+					</tr>
+					<tr>
+					<td class="term">camel_case($value);
+					</td>
+					<td class="definition">Convert a value to camel case
+					</td>
+					</tr><tr>
+					<td class="term">class_basename($class);
+					</td>
+					<td class="definition">Get the class "basename" of the given object / class
+					</td>
+					</tr><tr>
+					<td class="term">e('<html>');
+					</td>
+					<td class="definition">Escape a string
+					</td>
+					</tr><tr>
+					<td class="term">starts_with('Foo bar.', 'Foo');
+					</td>
+					<td class="definition">Determine if a given string starts with a given substring
+					</td>
+					</tr><tr>
+					<td class="term">ends_with('Foo bar.', 'bar.');
+					</td>
+					<td class="definition">Determine if a given string ends with a given substring
+					</td>
+					</tr><tr>
+					<td class="term">snake_case('fooBar');
+					</td>
+					<td class="definition">Convert a string to snake case
+					</td>
+					</tr><tr>
+					<td class="term">str_contains('Hello foo bar.', 'foo');
+					</td>
+					<td class="definition">Determine if a given string contains a given substring
+					</td>
+					</tr><tr>
+					<td class="term">str_finish('foo/bar', '/');</td>
+					<td class="definition">Result: foo/bar/
+					</td>
+					</tr>
+					<tr>
+					<td class="term">str_is('foo*', 'foobar');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">str_plural('car');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">str_random(25);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">str_singular('cars');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">studly_case('foo_bar');</td>
+					<td class="definition">Result: FooBar</td>
+					</tr>
+					<tr>
+					<td class="term">trans('foo.bar');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">trans_choice('foo.bar', $count);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">URLs and Links</th>
+					</tr>
+					<tr>
+					<td class="term">action('FooController@method', $parameters);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">link_to('foo/bar', $title, $attributes, $secure);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">link_to_asset('img/foo.jpg', $title, $attributes, $secure);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">link_to_route('route.name', $title, $parameters, $attributes);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">link_to_action('FooController@method', $title, $params, $attrs);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">asset('img/photo.jpg', $title, $attributes);
+					</td>
+					<td class="definition">HTML Link
+					</td>
+					</tr><tr>
+					<td class="term">secure_asset('img/photo.jpg', $title, $attributes);</td>
+					<td class="definition">HTTPS link
+					</td>
+					</tr>
+					<tr>
+					<td class="term">secure_url('path', $parameters);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">route($route, $parameters, $absolute = true);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">url('path', $parameters = array(), $secure = null);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Miscellaneous</th>
+					</tr>
+					<tr>
+					<td class="term">csrf_token();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">dd($value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">value(function(){ return 'bar'; });
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">with(new Foo)->chainedMethod();</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Security</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<th colspan="2">Passwords</th>
+					</tr>
+					<tr>
+					<td class="term">Hash::make('secretpassword');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Hash::check('secretpassword', $hashedPassword);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Hash::needsRehash($hashedPassword);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Auth</th>
+					</tr>
+					<tr>
+					<td class="term">
+					</td>
+					<td class="definition">
+					</td>
+					</tr><tr>
+					<td class="term">Auth::check();
+					</td>
+					<td class="definition">Determine if the current user is authenticated
+					</td>
+					</tr><tr>
+					<td class="term">Auth::user();
+					</td>
+					<td class="definition">Get the currently authenticated user
+					</td>
+					</tr><tr>
+					<td class="term">Auth::id();
+					</td>
+					<td class="definition">Get the ID of the currently authenticated user
+					</td>
+					</tr><tr>
+					<td class="term">Auth::attempt(array('email' => $email, 'password' => $password));
+					</td>
+					<td class="definition">Attempt to authenticate a user using the given credentials
+					</td>
+					</tr><tr>
+					<td class="term">Auth::attempt($credentials, true);
+					</td>
+					<td class="definition">'Remember me' by passing true to Auth::attempt()
+					</td>
+					</tr><tr>
+					<td class="term">Auth::once($credentials);
+					</td>
+					<td class="definition">Log in for a single request
+					</td>
+					</tr><tr>
+					<td class="term">Auth::login(User::find(1));
+					</td>
+					<td class="definition">Log a user into the application
+					</td>
+					</tr><tr>
+					<td class="term">Auth::loginUsingId(1);
+					</td>
+					<td class="definition">Log the given user ID into the application
+					</td>
+					</tr><tr>
+					<td class="term">Auth::logout();
+					</td>
+					<td class="definition">Log the user out of the application
+					</td>
+					</tr><tr>
+					<td class="term">Auth::validate($credentials);
+					</td>
+					<td class="definition">Validate a user's credentials
+					</td>
+					</tr><tr>
+					<td class="term">Auth::basic('username');
+					</td>
+					<td class="definition">Attempt to authenticate using HTTP Basic Auth
+					</td>
+					</tr><tr>
+					<td class="term">Auth::onceBasic();
+					</td>
+					<td class="definition">Perform a stateless HTTP Basic login attempt
+					</td>
+					</tr><tr>
+					<td class="term">Password::remind($credentials, function($message, $user){});
+					</td>
+					<td class="definition">Send a password reminder to a user
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Encryption</th>
+					</tr>
+					<tr>
+					<td class="term">Crypt::encrypt('secretstring');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Crypt::decrypt($encryptedString);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Crypt::setMode('ctr');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Crypt::setCipher($cipher);</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Eloquent</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Model::create(array('key' => 'value'));</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::firstOrCreate(array('key' => 'value'));
+					</td>
+					<td class="definition">Find first matching record by attributes or create
+					</td>
+					</tr><tr>
+					<td class="term">Model::firstOrNew(array('key' => 'value'));
+					</td>
+					<td class="definition">Find first record by attributes or instantiate
+					</td>
+					</tr><tr>
+					<td class="term">Model::updateOrCreate($attributes = array('key' => 'value'), $values = array('key' => 'value'));
+					</td>
+					<td class="definition">Create or update a record matching attibutes, and fill with values
+					</td>
+					</tr><tr>
+					<td class="term">Model::fill($attributes);</td>
+					<td class="definition">Fill a model with an array of attributes, beware of mass assignment!
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Model::fill($attributes);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::destroy(1);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::all();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::find(1);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::find(array('first', 'last'));
+					</td>
+					<td class="definition">Find using dual primary key
+					</td>
+					</tr><tr>
+					<td class="term">Model::findOrFail(1);
+					</td>
+					<td class="definition">Throw an exception if the lookup fails
+					</td>
+					</tr><tr>
+					<td class="term">Model::findOrFail(array('first', 'last'));</td>
+					<td class="definition">Find using dual primary key and throw exception if the lookup fails
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('foo', '=', 'bar')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::where('foo', '=', 'bar')->first();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::whereFoo('bar')->first();
+					</td>
+					<td class="definition">dynamic
+					</td>
+					</tr><tr>
+					<td class="term">Model::where('foo', '=', 'bar')->firstOrFail();</td>
+					<td class="definition">Throw an exception if the lookup fails
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('foo', '=', 'bar')->count();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::where('foo', '=', 'bar')->delete();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('foo', '=', 'bar')->toSql();</td>
+					<td class="definition">//Output raw query</td>
+					</tr>
+					<tr>
+					<td class="term">Model::whereRaw('foo = bar and cars = 2', array(20))->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::remember(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::remember(5, 'cache-key-name')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::cacheTags('my-tag')->remember(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::cacheTags(array('my-first-key','my-second-key'))->remember(5)->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::on('connection-name')->find(1);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::with('relation')->get();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::all()->take(10);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::all()->skip(10);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::all()->orderBy('column');</td>
+					<td class="definition">Default Eloquent sort is ascendant</td>
+					</tr>
+					<tr>
+					<td class="term">
+					Model::all()->orderBy('column','desc');</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Soft Delete</th>
+					</tr>
+					<tr>
+					<td class="term">Model::withTrashed()->where('cars', 2)->get();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::withTrashed()->where('cars', 2)->restore();</td>
+					<td class="definition">Include the soft deleted models in the results</td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('cars', 2)->forceDelete();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::onlyTrashed()->where('cars', 2)->get();</td>
+					<td class="definition">Force the result set to only included soft deletes</td>
+					</tr>
+					<tr>
+					<th colspan="2">Events</th>
+					</tr>
+					<tr>
+					<td class="term">Model::creating(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::created(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::updating(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::updated(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::saving(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::saved(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::deleting(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::deleted(function($model){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Model::observe(new FooObserver);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">                </td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">
+					Eloquent Configuration</th>
+					</tr>
+					<tr>
+					<td class="term">Eloquent::unguard();
+					</td>
+					<td class="definition">Disables mass assignment exceptions from being thrown from model inserts and updates
+					</td>
+					</tr><tr>
+					<td class="term">Eloquent::reguard();            </td>
+					<td class="definition">Renables any ability to throw mass assignment exceptions
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Mail</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Mail::send('email.view', $data, function($message){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Mail::send(array('html.view', 'text.view'), $data, $callback);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Mail::queue('email.view', $data, function($message){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Mail::queueOn('queue-name', 'email.view', $data, $callback);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Mail::later(5, 'email.view', $data, function($message){});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Mail::pretend();</td>
+					<td class="definition">Write all email to logs instead of sending</td>
+					</tr>
+					<tr>
+					<th colspan="2">Messages</th>
+					</tr>
+					<tr>
+					<td class="term">$message->from('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->sender('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->returnPath('email@example.com');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->to('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->cc('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->bcc('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->replyTo('email@example.com', 'Mr. Example');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->subject('Welcome to the Jungle');
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->priority(2);
+					</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr><tr>
+					<td class="term">$message->attach('foo\bar.txt', $options);</td>
+					<td class="definition">These can be used on the $message instance passed into Mail::send() or Mail::queue()</td>
+					</tr>
+					<tr>
+					<td class="term">$message->attachData('bar', 'Data Name', $options);
+					</td>
+					<td class="definition">This uses in-memory data as attachments
+					</td>
+					</tr><tr>
+					<td class="term">$message->embed('foo\bar.txt');</td>
+					<td class="definition">Embed a file in the message and get the CID
+					</td>
+					</tr>
+					<tr>
+					<td class="term">$message->embedData('foo', 'Data Name', $options);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$message->getSwiftMessage();</td>
+					<td class="definition">Get the underlying Swift Message instance</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Unit testing</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<th colspan="2">Install and run</th>
+					</tr>
+					<tr>
+					<td class="term">"phpunit/phpunit": "4.0.*"
+					</td>
+					<td class="definition">add to composer and update:
+					</td>
+					</tr><tr>
+					<td class="term">./vendor/bin/phpunit</td>
+					<td class="definition">run tests (from project root)
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Asserts</th>
+					</tr>
+					<tr>
+					<td class="term">$this->assertTrue(true);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertEquals('foo', $bar);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertCount(1,$times);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertResponseOk();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertResponseStatus(403);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertRedirectedTo('foo');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertRedirectedToRoute('route.name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertRedirectedToAction('Controller@method');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertViewHas('name');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertViewHas('age', $value);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->assertSessionHasErrors();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">$this->assertSessionHasErrors('name');
+					</td>
+					<td class="definition">Asserting the session has errors for a given key...
+					</td>
+					</tr><tr>
+					<td class="term">$this->assertSessionHasErrors(array('name', 'age'));</td>
+					<td class="definition">Asserting the session has errors for several keys...
+					</td>
+					</tr>
+					<tr>
+					<td class="term">$this->assertHasOldInput();</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Calling routes</th>
+					</tr>
+					<tr>
+					<td class="term">$response = $this->call($method, $uri, $parameters, $files, $server, $content);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$response = $this->callSecure('GET', 'foo/bar');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->session(['foo' => 'bar']);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->flushSession();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->seed();
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">$this->seed($connection);</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Queues</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Queue::push('SendMail', array('message' => $message));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Queue::push('SendEmail@send', array('message' => $message));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Queue::push(function($job) use $id {});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Queue::bulk(array('SendEmail', 'NotifyUser'), $payload);
+					</td>
+					<td class="definition">Same payload to multiple workers
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:listen</td>
+					<td class="definition">Starting the queue listener
+					</td>
+					</tr>
+					<tr>
+					<td class="term">php artisan queue:listen connection
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">php artisan queue:listen --timeout=60</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">php artisan queue:work
+					</td>
+					<td class="definition">Process only the first job on the queue
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:work --daemon
+					</td>
+					<td class="definition">Start a queue worker in daemon mode
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:failed-table
+					</td>
+					<td class="definition">Create migration file for failed jobs
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:failed
+					</td>
+					<td class="definition">Listing failed jobs
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:forget 5
+					</td>
+					<td class="definition">Delete failed job by id
+					</td>
+					</tr><tr>
+					<td class="term">php artisan queue:flush</td>
+					<td class="definition">Delete all failed jobs
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                    
+          <div class="card">
+		    <div class="cardName">Pagination</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Model::paginate(15);
+					</td>
+					<td class="definition">Auto-Magic Pagination
+					</td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('cars', 2)->paginate(15);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">Model::where('cars', 2)->simplePaginate(15);
+					</td>
+					<td class="definition">"Next" and "Previous" only
+					</td>
+					</tr><tr>
+					<td class="term">Paginator::make($items, $totalItems, $perPage);
+					</td>
+					<td class="definition">Manual Paginator
+					</td>
+					</tr><tr>
+					<td class="term">$variable->links();</td>
+					<td class="definition">Print page navigators in view
+					</td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                              
+          <div class="card">
+		    <div class="cardName">Validation</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<td class="term">Validator::make(array('key' => 'Foo'),array('key' => 'required|in:Foo'));
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Validator::extend('foo', function($attribute, $value, $params){});
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Validator::extend('foo', 'FooValidator@validate');
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">Validator::resolver(function($translator, $data, $rules, $msgs){return new FooValidator($translator, $data, $rules, $msgs);});</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<th colspan="2">Rules</th>
+					</tr>
+					<tr>
+					<td class="term">accepted
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">active_url
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">after:YYYY-MM-DD
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">before:YYYY-MM-DD
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">alpha
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">alpha_dash
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">alpha_num
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">array
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">between:1,10
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">confirmed
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">date
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">date_format:YYYY-MM-DD
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">different:fieldname
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">digits:value
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">digits_between:min,max
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">boolean
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">email
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">exists:table,column
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">image
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">in:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">not_in:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">integer
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">numeric
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">ip
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">max:value
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">min:value
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">mimes:jpeg,png
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">regex:[0-9]
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required_if:field,value
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required_with:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required_with_all:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required_without:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">required_without_all:foo,bar,...
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">same:field
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">size:value
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">timezone
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">unique:table,column,except,idColumn
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">url</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>
+                              
+          <div class="card">
+		    <div class="cardName">SSH</div>
+            <div class="description">
+                <table class="table table-striped">
+					<tr>
+					<th colspan="2">Executing Commands</th>
+					</tr>
+					<tr>
+					<td class="term">SSH::run(array $commands);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">SSH::into($remote)->run(array $commands); </td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">SSH::run(array $commands, function($line){echo $line.PHP_EOL;});</td>
+					<td class="definition">specify remote, otherwise assumes default
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">Tasks</th>
+					</tr>
+					<tr>
+					<td class="term">SSH::define($taskName, array $commands);</td>
+					<td class="definition"></td>
+					</tr>
+					<tr>
+					<td class="term">SSH::task($taskName, function($line) 
+					</td>
+					<td class="definition">define
+					</td>
+					</tr><tr>
+					<td class="term">{	echo $line.PHP_EOL; });</td>
+					<td class="definition">execute
+					</td>
+					</tr>
+					<tr>
+					<th colspan="2">SFTP Uploads</th>
+					</tr>
+					<tr>
+					<td class="term">SSH::put($localFile, $remotePath);
+					</td>
+					<td class="definition"></td>
+					</tr><tr>
+					<td class="term">SSH::putString($string, $remotePath);</td>
+					<td class="definition"></td>
+					</tr>
+                </table>
+            </div>
+          </div>   
+		
+		</div>
+		
+	</div>
