@@ -34,11 +34,11 @@ t:
     lang:    "ru"
     slogan:  "Все шпаргалки в одном месте"
     search:  "Поиск"
-    other:   "Другие"
+    all:     "Все"
     about:   "О проекте"
   en:
     lang:    "en"
     slogan:  "All Cheat Sheets At One Place"
     search:  "Search"
-    other:   "Other"
+    all:     "All"
     about:   "About"
