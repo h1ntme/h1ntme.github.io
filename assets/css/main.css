@@ -210,7 +210,10 @@ border: none;
 .row-others {
 	margin-top: 33px;
 }
-
+.row-others span.metro:hover{
+background: #5b8;
+color: #5B8FCA;
+}
 .col-group-left {
 	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 	color: #5B8FCA;
