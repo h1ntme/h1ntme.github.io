@@ -222,7 +222,7 @@ color: #fff;
 }
 
 .col-group-right {
-	border-left: solid 4px #5B8FCA;
+	border-left: double 4px #5B8FCA;
 }
 
 span.metro {
