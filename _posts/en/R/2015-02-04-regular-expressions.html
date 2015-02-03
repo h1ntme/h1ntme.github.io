@@ -1,0 +1,427 @@
+---
+layout: hints
+title:  regular-expressions
+categories:
+- en
+---
+
+<div class="card">
+    <div class="cardName">Basic Syntax</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">/.../</td>
+                <td class="definition">Start and end regex delimeters</td>
+            </tr>
+            <tr>
+                <td class="term">|</td>
+                <td class="definition">Alternation</td>
+            </tr>
+            <tr>
+                <td class="term">()</td>
+                <td class="definition">Grouping</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Position Matching</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">^</td>
+                <td class="definition">Start of string or start of line in multi-line mode</td>
+            </tr>
+            <tr>
+                <td class="term">\A</td>
+                <td class="definition">Start of string</td>
+            </tr>
+            <tr>
+                <td class="term">$</td>
+                <td class="definition">End of string in multi-line mode</td>
+            </tr>
+            <tr>
+                <td class="term">\Z</td>
+                <td class="definition">End of string</td>
+            </tr>
+            <tr>
+                <td class="term">\b</td>
+                <td class="definition">Word boundary</td>
+            </tr>
+            <tr>
+                <td class="term">\B</td>
+                <td class="definition">Not word boundary</td>
+            </tr>
+            <tr>
+                <td class="term">\&lt;</td>
+                <td class="definition">Start of word</td>
+            </tr>
+            <tr>
+                <td class="term">\&gt;</td>
+                <td class="definition">End of word</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Character Classes</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">\s</td>
+                <td class="definition">Whitespace</td>
+            </tr>
+            <tr>
+                <td class="term">\S</td>
+                <td class="definition">Not whitespace</td>
+            </tr>
+            <tr>
+                <td class="term">\w</td>
+                <td class="definition">Word</td>
+            </tr>
+            <tr>
+                <td class="term">\W</td>
+                <td class="definition">Not word</td>
+            </tr>
+            <tr>
+                <td class="term">\d</td>
+                <td class="definition">Digit</td>
+            </tr>
+            <tr>
+                <td class="term">\D</td>
+                <td class="definition">Not digit</td>
+            </tr>
+            <tr>
+                <td class="term">\x</td>
+                <td class="definition">Hexademical digit</td>
+            </tr>
+            <tr>
+                <td class="term">\O</td>
+                <td class="definition">Octal digit</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Special Characters</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">\n</td>
+                <td class="definition">Newline</td>
+            </tr>
+            <tr>
+                <td class="term">\r</td>
+                <td class="definition">Carriage return</td>
+            </tr>
+            <tr>
+                <td class="term">\t</td>
+                <td class="definition">Tab</td>
+            </tr>
+            <tr>
+                <td class="term">\v</td>
+                <td class="definition">Vertical tab</td>
+            </tr>
+            <tr>
+                <td class="term">\f</td>
+                <td class="definition">Form feed</td>
+            </tr>
+            <tr>
+                <td class="term">\xxx</td>
+                <td class="definition">Octal character xxx</td>
+            </tr>
+            <tr>
+                <td class="term">\xhh</td>
+                <td class="definition">Hex character hh</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Groups and Ranges</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">.</td>
+                <td class="definition">Any character except newline(\n)</td>
+            </tr>
+            <tr>
+                <td class="term">(a|b)</td>
+                <td class="definition">a or b</td>
+            </tr>
+            <tr>
+                <td class="term">(...)</td>
+                <td class="definition">Group</td>
+            </tr>
+            <tr>
+                <td class="term">(?:...)</td>
+                <td class="definition">Passive (non-capturing) group</td>
+            </tr>
+            <tr>
+                <td class="term">[abc]</td>
+                <td class="definition">a, b or c</td>
+            </tr>
+            <tr>
+                <td class="term">[^abc]</td>
+                <td class="definition">Not a, b or c</td>
+            </tr>
+            <tr>
+                <td class="term">[a-z]</td>
+                <td class="definition">Letters from a to z</td>
+            </tr>
+            <tr>
+                <td class="term">[A-Z]</td>
+                <td class="definition">Uppercase letters from A to Z</td>
+            </tr>
+            <tr>
+                <td class="term">[0-9]</td>
+                <td class="definition">Digits from 0 to 9</td>
+            </tr>
+        </table>
+        Note: Ranges are inclusive. <!-- I don't know how to decorate this -->
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Quantifiers</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">*</td>
+                <td class="definition">0 or more</td>
+            </tr>
+            <tr>
+                <td class="term">+</td>
+                <td class="definition">1 or more</td>
+            </tr>
+            <tr>
+                <td class="term">?</td>
+                <td class="definition">0 or 1</td>
+            </tr>
+            <tr>
+                <td class="term">{3}</td>
+                <td class="definition">Exactly 3</td>
+            </tr>
+            <tr>
+                <td class="term">{3,}</td>
+                <td class="definition">3 or more</td>
+            </tr>
+            <tr>
+                <td class="term">{3,5}</td>
+                <td class="definition">3,4 or 5</td>
+            </tr>
+        </table>
+        Note: Quantifiers are greedy - they match as many times as possible. Add a ? after the quantifier to make it ungreedy. <!-- I don't know how to decorate this -->
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Escape Sequences</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">\</td>
+                <td class="definition">Escape following character<br />
+                    Used to escape any of the following metacharacters: {}[]()^$.|*+?\.</td>
+            </tr>
+            <tr>
+                <td class="term">\Q</td>
+                <td class="definition">Begin literal sequence</td>
+            </tr>
+            <tr>
+                <td class="term">\E</td>
+                <td class="definition">End leteral sequence</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">String Replacement</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">$1</td>
+                <td class="definition">1st group</td>
+            </tr>
+            <tr>
+                <td class="term">$2</td>
+                <td class="definition">2nd group</td>
+            </tr>
+            <tr>
+                <td class="term">$n</td>
+                <td class="definition">nth group</td>
+            </tr>
+            <tr>
+                <td class="term">$`</td>
+                <td class="definition">Before matched string</td>
+            </tr>
+            <tr>
+                <td class="term">$'</td>
+                <td class="definition">After matched string</td>
+            </tr>
+            <tr>
+                <td class="term">$+</td>
+                <td class="definition">Last matche string</td>
+            </tr>
+            <tr>
+                <td class="term">$&</td>
+                <td class="definition">Entire matches string</td>
+            </tr>
+        </table>
+        Note: Some regex implementations use \ instead of $. <!-- I don't know how to decorate this -->
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Assertions</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">?=</td>
+                <td class="definition">Lookahead assertion</td>
+            </tr>
+            <tr>
+                <td class="term">?!</td>
+                <td class="definition">Negative lookahead</td>
+            </tr>
+            <tr>
+                <td class="term">?&lt;=</td>
+                <td class="definition">Lookbehind assertion</td>
+            </tr>
+            <tr>
+                <td class="term">?!= <br />?&lt;!</td>
+                <td class="definition">Negative lookbehind</td>
+            </tr>
+            <tr>
+                <td class="term">?&gt;</td>
+                <td class="definition">Once-only subexpression</td>
+            </tr>
+            <tr>
+                <td class="term">?()</td>
+                <td class="definition">Condition if-then</td>
+            </tr>
+            <tr>
+                <td class="term">?()|</td>
+                <td class="definition">Condition if-then-else</td>
+            </tr>
+            <tr>
+                <td class="term">?#</td>
+                <td class="definition">Comment</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">POSIX</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">[:upper:]</td>
+                <td class="definition">Uppercase letters</td>
+            </tr>
+            <tr>
+                <td class="term">[:lower:]</td>
+                <td class="definition">Lowercase letters</td>
+            </tr>
+            <tr>
+                <td class="term">[:alpha:]</td>
+                <td class="definition">All letters</td>
+            </tr>
+            <tr>
+                <td class="term">[:alnum:]</td>
+                <td class="definition">Digits and letters</td>
+            </tr>
+            <tr>
+                <td class="term">[:digit:]</td>
+                <td class="definition">Digits</td>
+            </tr>
+            <tr>
+                <td class="term">[:xdigit:]</td>
+                <td class="definition">Hexademical digits</td>
+            </tr>
+            <tr>
+                <td class="term">[:punct:]</td>
+                <td class="definition">Punctuation</td>
+            </tr>
+            <tr>
+                <td class="term">[:blank:]</td>
+                <td class="definition">Space and tab</td>
+            </tr>
+            <tr>
+                <td class="term">[:space:]</td>
+                <td class="definition">Blank characters</td>
+            </tr>
+            <tr>
+                <td class="term">[:cntrl:]</td>
+                <td class="definition">Control characters</td>
+            </tr>
+            <tr>
+                <td class="term">[:graph:]</td>
+                <td class="definition">Printed characters</td>
+            </tr>
+            <tr>
+                <td class="term">[:print:]</td>
+                <td class="definition">Printed characters and spaces</td>
+            </tr>
+            <tr>
+                <td class="term">[:word:]</td>
+                <td class="definition">Digits, letters and underscore</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="cardName">Pattern Modifiers</div>
+    <div class="description">
+        <table class="table table-striped">
+            <tr>
+                <td class="term">g</td>
+                <td class="definition">Global match</td>
+            </tr>
+            <tr>
+                <td class="term">i</td>
+                <td class="definition">Case-insensitive</td>
+            </tr>
+            <tr>
+                <td class="term">m</td>
+                <td class="definition">Multi-line mode <br />
+                    Causes ^ and $ to also match the start/end of lines.</td>
+            </tr>
+            <tr>
+                <td class="term">s</td>
+                <td class="definition">Single-line mode <br />
+                    Causes . to match all, including line breaks.</td>
+            </tr>
+            <tr>
+                <td class="term">x</td>
+                <td class="definition">Allow comments and whitespaces in pattern</td>
+            </tr>
+            <tr>
+                <td class="term">e</td>
+                <td class="definition">Evaluate replacement</td>
+            </tr>
+            <tr>
+                <td class="term">U</td>
+                <td class="definition">Ungreedy mode</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
