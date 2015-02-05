@@ -82,7 +82,6 @@ body {
 .card {
 	width: 100%;
 	margin-top: 18px;
-	float: left;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td {
