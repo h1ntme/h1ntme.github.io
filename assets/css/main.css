@@ -82,7 +82,7 @@ body {
 .card {
 	margin: 2px;
 	margin-top: 18px;
-	width: 48%;
+	width: 100%;
 	display: inline-block;
 	float: left;
 }
@@ -357,4 +357,9 @@ ul.navbar-nav {
 display:inline-block;
 width: 728px;
 float: right;
+}
+.custom-col{
+ -moz-column-count: 2; 
+ -webkit-column-count: 2; 
+ column-count: 2;
 }
