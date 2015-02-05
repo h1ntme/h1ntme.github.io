@@ -81,16 +81,9 @@ body {
 
 .card {
 	margin-top: 18px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	width: 100%;
-=======
 	width: 48%;
->>>>>>> parent of d891ba9... 2 col
 	display: inline-block;
 	float: left;
-=======
->>>>>>> parent of ba2ff37... get rid if "row" and "col" in hints' content
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td {
@@ -352,9 +345,4 @@ ul.navbar-nav {
 display:inline-block;
 width: 728px;
 float: right;
-}
-.custom-col{
- -moz-column-count: 2; 
- -webkit-column-count: 2; 
- column-count: 2;
 }
