@@ -59,6 +59,11 @@ color: #fff;
 .metro img{
     padding-top: 49px;
 }
+
+ span .metro {
+	text-transform: uppercase;
+}
+
 #slogan{
 font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 color:#5B8FCA;
