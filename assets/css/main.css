@@ -234,6 +234,7 @@ span.metro {
 	border: solid 1px #5B8FCA;
 	font-size:18px;	
 	margin: 5px;
+	text-transform: uppercase;
 }
 
 .col-metro {
