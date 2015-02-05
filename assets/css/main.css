@@ -95,8 +95,7 @@ and (max-width : 479px) {
 		width: 98%;
 		display: block;
 		clear: both;
-		margin: auto;		
-		margin-top: 18px;
+		margin: auto;
 	}
 }
 
