@@ -80,11 +80,13 @@ body {
 }
 
 .card {
-	margin: 2px;
 	margin-top: 18px;
+<<<<<<< HEAD
 	width: 100%;
 	display: inline-block;
 	float: left;
+=======
+>>>>>>> parent of ba2ff37... get rid if "row" and "col" in hints' content
 }
 
 @media only screen
