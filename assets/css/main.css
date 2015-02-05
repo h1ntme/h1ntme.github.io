@@ -89,15 +89,6 @@ body {
 >>>>>>> parent of ba2ff37... get rid if "row" and "col" in hints' content
 }
 
-@media only screen
-and (max-width : 479px) {
-	.card {
-		width: 90%;
-		display: block;
-		clear: both;
-	}
-}
-
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #ffffff;
 }
