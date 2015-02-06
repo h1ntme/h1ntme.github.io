@@ -8,7 +8,7 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{% if page.lang == 'en' %}{{site.t[page.lang].lang}}{% else %}{{site.t.link}}"><img src="/assets/img/logo.png" alt="H1NT.ME">
+			<a class="navbar-brand" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}"><img src="/assets/img/logo.png" alt="H1NT.ME">
 			<p id="slogan" class="hidden-xs">{{site.t[page.lang].slogan}}</p>
 			</a>
 		  </div>
