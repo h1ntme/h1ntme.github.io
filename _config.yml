@@ -30,6 +30,7 @@ defaults:
       lang: en
       category: "en"
 t:
+  link: "/"
   ru:
     lang:    "ru"
     slogan:  "Все шпаргалки в одном месте"
