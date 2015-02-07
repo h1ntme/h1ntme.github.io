@@ -328,6 +328,11 @@ div.srch:hover {
 	background: none;
 }
 
+.highlight {
+	color: red;
+	font-weight: bold;
+}
+
 .navbar-collapse ul.nav-pills {
 	margin-top: 5px;
 }
