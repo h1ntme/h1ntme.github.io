@@ -280,6 +280,10 @@ span.metro {
 	border: none;
 	border-radius: 0;
 	}
+	
+.srch:hover {
+	background: none;
+}
 
 .metro-nav-btn:hover, .metro-nav-btn a:hover, .metro-nav-btn a:focus{
 	background:#5B8FCA !important;
