@@ -314,10 +314,18 @@ ul.navbar-nav {
 	background: #f5f5f5;
 }
 
-.navbar-nav form > button {
+.navbar-nav form > div {
 	margin-left: 5px;
 	height: 30px;
 	width: 30px;
+}
+
+div.srch {
+	cursor: pointer;
+}
+
+div.srch:hover {
+	background: none;
 }
 
 .navbar-collapse ul.nav-pills {
