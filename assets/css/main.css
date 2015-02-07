@@ -315,17 +315,17 @@ ul.navbar-nav {
 }
 
 .navbar-nav form > div {
-	margin-left: 5px;
-	height: 30px;
-	width: 30px;
+	padding: 5px;
+	display: inline;
+}
+
+.navbar-nav form > div > i {
+	font-size: 16px;
 }
 
 div.srch {
+	margin-left: 5px;
 	cursor: pointer;
-}
-
-div.srch:hover {
-	background: none;
 }
 
 .highlight {
