@@ -86,12 +86,15 @@ body {
 #cardTable{
 	width:100%;
 }
+
 .card {
 	width: 30%;
 	margin-top: 18px;
 	float:left;
 	}
-
+@media only screen and (max-device-width: 480px) {
+  .card { width: 100%; }
+}
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #ffffff;
 }
