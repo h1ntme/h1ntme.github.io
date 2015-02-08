@@ -83,11 +83,14 @@ padding-left:1px;
 body {
 	background: #f1f1f1;
 }
-
-.card {
-	width: 100%;
-	margin-top: 18px;
+#cardTable{
+	width:100%;
 }
+.card {
+	width: 30%;
+	margin-top: 18px;
+	float:left;
+	}
 
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #ffffff;

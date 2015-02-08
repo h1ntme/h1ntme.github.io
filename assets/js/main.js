@@ -16,24 +16,37 @@
 	});
 }
 
+var $container = $('#cardTable');
+// initialize
+$container.masonry({
+  columnWidth: '.card',
+  itemSelector: '.card',
+  "gutter": 10
+});
+
 $(document).ready(function() {	   
   
   searchOnPage();
 	
   $('#close-all').click(function() {
-    $(".description").slideUp(300);
-  });
+    $(".description").slideUp(300, function() {
+    $container.masonry(); });
+	});
   $('#open-all').click(function() {
-    $(".description").slideDown(300);
-  });
+    $(".description").slideDown(300, function() {
+    $container.masonry();
+  }); });
+  $('#hide-all').click(function() {
+    $('.definition').slideToggle(300, function() {
+    $container.masonry();
+  }); });
+  
   $('.cardName').click(function() {
     $(this).next('.description').slideToggle(300);
   });
-  $('#hide-all').click(function() {
-    $('.definition').slideToggle(300);
-  });
+  
   $('.term').click(function() {
     $(this).next('.definition').slideToggle(300);
   });
-  
+  var msnry = $container.data('masonry');
 });

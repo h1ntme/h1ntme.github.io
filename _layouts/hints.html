@@ -8,11 +8,18 @@
     {% include header.html %}
 		<div id="hints">
 		    <div class="container" id="search-area">	<!--добавил id для поиска по странице-->
+
 		{% include control.html %}
-
+		<div class="row">
+        <div class="col-md-12 col-sm-12">
+		<div id="cardTable">
 			{{ content }}
-
 		</div>
+		</div>
+		
+		</div>
+		</div>	
+</div>
     {% include footer.html %}
 
 
@@ -20,7 +27,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="/assets/js/main.js"></script>  
 <script src="/assets/js/highlight.js"></script>
+<script src="/assets/js/masonry.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>  
+
   </body>
 </html>
