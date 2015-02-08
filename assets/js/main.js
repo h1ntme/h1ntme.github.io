@@ -42,8 +42,9 @@ $(document).ready(function() {
   }); });
   
   $('.cardName').click(function() {
-    $(this).next('.description').slideToggle(300);
-  });
+    $(this).next('.description').slideToggle(300, function() {
+    $container.masonry();
+  }); });
   
   $('.term').click(function() {
     $(this).next('.definition').slideToggle(300);
