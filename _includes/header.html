@@ -1,51 +1,28 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			  <span class="sr-only">Toggle navigation</span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}"><img src="/assets/img/logo.png" alt="H1NT.ME">
-			<p id="slogan" class="hidden-xs">{{site.t[page.lang].slogan}}</p>
-			</a>
-		  </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="logo" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}"><img src="/assets/img/logo.png" alt="H1NT.ME"></a>
+				<h1 class="title">{{page.title}}</h1>
 
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<h1 class="navbar-text title">{{page.title}}</h1>
-			<ul class="nav navbar-nav">
-				<li>
-					<form action="#">						
-						<input type="text" name="" placeholder="{{site.t[page.lang].search}}" class=""/>
-						<div class="metro metro-nav-btn srch"><i class="icon-search"></i></div>
-					</form>
-				</li>
-			</ul>
-			<ul class="nav nav-pills navbar-right">
-				<li class="metro-nav-btn visible-lg-*"><a href="http://vk.com/share.php?url=http://h1nt.me" target="_blank"><i class='icon-VK'></i></a></li>
-				<li class="metro-nav-btn visible-lg-*"><a href="http://facebook.com/" target="_blank"><i class="icon-facebook"></i></a></li>
-				<li class="metro-nav-btn visible-lg-*"><a href="javascript:window.print(); void 0;" target="_blank"><img width="18" src="/assets/img/print.png" alt="Print"></a></li>
-				<li class="control-lang"><a href="/ru/{{page.title}}">ru</a></li>
-				<li class="control-lang"><a href="/en/{{page.title}}">en</a></li>
-				<!--закомментил пока вдруг вернемся к выпадающему li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">+<span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-				  <li><a href="#">Поделиться vk</a>
-				  </li>
-				  <li><a href="#">Поделиться fb</a>
-				  </li>
-				  <li class="divider"></li>
-				  <li><a href="#">Печать</a>
-				  </li>
-				</ul>
-				</li закомментил пока вдруг вернемся к выпадающему-->
-			</ul>			
-			
-		  </div>
-		  <!-- /.navbar-collapse -->
 		</div>
-		<!-- /.container-fluid -->
-	  </nav>
+        
+        <div id="navbar" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<input type="text" placeholder="{{site.t[page.lang].search}}" class="search">
+		</ul>
+			<ul class="nav nav-pills navbar-right">
+				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/share.png"></a></p>
+				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/about.png"></a></p>
+				<p class="nav-text visible-lg-*"><a href="javascript:window.print(); void 0;" target="_blank"><img width="18" src="/assets/img/print.png" alt="Print"></a></p>
+				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/lang.png"></a></p>
+			</ul>			
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

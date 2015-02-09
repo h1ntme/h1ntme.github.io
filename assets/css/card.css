@@ -1,0 +1,72 @@
+.cardName {
+	display: block;
+	height: 40px;
+	width: 100%;
+	color: #67383e;
+	background-color: #fff;
+	border: solid 1px #67383e;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;	
+	text-transform: uppercase;
+}
+
+.description {
+	background: #e6e7e2;
+	padding-bottom: 4px;
+}
+
+.description-header {
+	border-bottom: solid 1px #8aa7c7;
+	padding: 0;
+	height: 30px;
+	position: relative;
+	display: block;
+	color: white;
+	font-weight: bold;
+	border-bottom: solid 2px #8aa7c7;
+}
+
+.description-header > span {
+	background: #8aa7c7;
+	display: inline-block;
+	padding: 5px;
+}
+
+.description>.description-header:first-child span {
+	margin-top: -1px;
+}
+
+div.description-header:before {
+	position: absolute;
+	left: -13px;
+	top: 0px;
+	content: url(/assets/thing.png);
+}
+
+.description>.description-header:first-child:before {
+	position: absolute;
+	left: -13px;
+	top: -1px;
+	content: url(/assets/thing.png);	
+	padding: 0;
+	margin: 0;
+	height: 31px;
+	border-bottom: solid 1px #8aa7c7;
+}
+
+.term {
+	display: block;
+	background: #e6e7e2;
+	font-weight: bold;
+	text-indent: 15px;
+}
+
+.definition {
+	width: 98%;
+	margin: 5px auto;
+	background: #fff;
+	color: #000;
+	border-radius: 5px;
+	padding: 5px 13px;
+}

@@ -1,0 +1,86 @@
+#hints {
+padding-top:70px;
+position: relative;
+min-height: 100%;
+}
+.navbar-fixed-top {
+border-bottom: 1px solid #7F4551;
+background: #fff;
+height:50px;
+line-height:50px;
+color: #7F4551;
+}
+.title{
+color:#7F4551;
+margin-top: 0;
+margin-bottom: 0px;
+margin-left: 35px;
+float: left;
+height:50px;
+border-right: 1px solid #7F4551;
+padding-right: 20px;
+text-transform: uppercase;
+font-weight: 100;
+font-size: 14px;
+line-height: 50px;
+}
+.logo img{
+vertical-align: baseline;
+}
+.navbar-header{
+height: 50px;
+color: #7F4551;
+}
+.nav-text{
+padding-left: 10px;
+font-size: 18px;
+float: left;
+color: #7F4551;
+width: 50px;
+border-right: 1px solid #7F4551;
+}
+.nav-text a{
+color: #7F4551;
+}
+.nav-text a:hover{
+text-decoration: none;
+}
+ul p:last-of-type{
+border-right: 0px solid #7F4551;
+}
+.logo{
+float: left;
+}
+.control{
+width: 50px;
+height: 50px;
+display: inline-block;
+cursor: pointer;
+border: 1px solid #7F4551;
+background: #fff;
+color: #7F4551;
+line-height: 50px;
+text-align: center;
+font-size: 20px;
+}
+.navbar-brand{
+    position: relative;
+}
+.search{
+border: 0;
+line-height: 30px;
+padding-left: 20px;
+}
+input:focus {
+    border: 1px transparent;
+	outline: none !important;
+}
+::-webkit-input-placeholder {color:#7F4551;}
+::-moz-placeholder          {color:#7F4551;}/* Firefox 19+ */
+:-moz-placeholder           {color:#7F4551;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#7F4551;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
