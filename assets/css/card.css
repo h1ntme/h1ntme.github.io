@@ -41,14 +41,14 @@ div.description-header:before {
 	position: absolute;
 	left: -13px;
 	top: 0px;
-	content: url(/assets/thing.png);
+	content: url(/assets/img/thing.png);
 }
 
 .description>.description-header:first-child:before {
 	position: absolute;
 	left: -13px;
 	top: -1px;
-	content: url(/assets/thing.png);	
+	content: url(/assets/img/thing.png);	
 	padding: 0;
 	margin: 0;
 	height: 31px;
