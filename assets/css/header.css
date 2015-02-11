@@ -62,6 +62,7 @@ color: #7F4551;
 line-height: 50px;
 text-align: center;
 font-size: 20px;
+vertical-align: middle;
 }
 .navbar-brand{
     position: relative;
