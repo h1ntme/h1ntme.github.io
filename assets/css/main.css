@@ -256,8 +256,8 @@ span.metro {
 
 
 .footer {
-  /* Set the fixed height of the footer here */
-  margin: 40px 0 20px 0;
+  /* changed from margin 40px 0 20px 0 - 11/02/2015 */
+  margin-top: 60px;
 }
 
 .footer .col-md-2 img {
