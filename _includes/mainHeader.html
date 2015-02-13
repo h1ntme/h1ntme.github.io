@@ -1,12 +1,16 @@
-	<nav class="navbar">
+    <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-        <a class="logo" href="#"><img src="/assets/img/logo.png" alt="H1NT.ME"></a>
-
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="logo" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}"><img src="/assets/img/logo.png" alt="H1NT.ME"></a>
 		</div>
         
         <div id="navbar" class="navbar-collapse collapse">
-		
 			<ul class="nav nav-pills navbar-right">
 				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/share.png"></a></p>
 				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/about.png"></a></p>
