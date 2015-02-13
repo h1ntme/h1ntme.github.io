@@ -1,3 +1,7 @@
+.card {
+	margin-left: 40px;
+}
+
 .cardName {
 	display: block;
 	height: 40px;
