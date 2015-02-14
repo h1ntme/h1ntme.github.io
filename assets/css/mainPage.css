@@ -99,6 +99,11 @@ a:link { /*добавил это из-за ссылок в метро*/
   background: #f2f3ee;
 }
 
+.footer > .container-fluid {
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
 body {
 	margin-bottom: 60px;
 }
