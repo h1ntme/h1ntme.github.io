@@ -14,7 +14,9 @@
 	padding: 10px;	
 	text-transform: uppercase;
 }
-
+.cardName:hover{
+	color: #67383e;
+}
 .description {
 	background: #e6e7e2;
 	padding-bottom: 4px;
@@ -41,23 +43,7 @@
 	margin-top: -1px;
 }
 
-div.description-header:before {
-	position: absolute;
-	left: -13px;
-	top: 0px;
-	content: url(/assets/img/thing.png);
-}
 
-.description>.description-header:first-child:before {
-	position: absolute;
-	left: -13px;
-	top: -1px;
-	content: url(/assets/img/thing.png);	
-	padding: 0;
-	margin: 0;
-	height: 31px;
-	border-bottom: solid 1px #8aa7c7;
-}
 
 .term {
 	display: block;
