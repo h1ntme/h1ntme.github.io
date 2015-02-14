@@ -11,16 +11,6 @@ a:link { /*добавил это из-за ссылок в метро*/
 	text-decoration: none; 
 }
 
-.navbar {
-	border-bottom: solid 1px black;
-	background: #fff;
-	margin-bottom: 0;
-}
-
-.navbar > .container-fluid {
-	margin-bottom: 0;
-}
-
 .jumbotron {
 	background-color: #f2f3ee;
 	min-height: 105px;
