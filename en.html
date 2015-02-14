@@ -3,15 +3,17 @@ layout: default
 title: H1NT.me
 lang: en
 permalink: /en/
----
-
-	<div class="container container-index">
-    {% include mainMetro.html %}
+--- 
+	<div class="jumbotron">
+		<p>{{site.t[page.lang].slogan}}</p>
 	</div>
-
-	<div class="container container-others">
-			<div class="row">
-				<div class="col-md-12"><h1>{{site.t[page.lang].all}}</h1></div>
-			</div>
-			{% include all.html %}
+	
+    <div class="container container-index">
+	  <div class="row">
+		<h2>{{site.t[page.lang].short}}</h2>
 	  </div>
+	  
+    {% include mainMetro.html %}
+    {% include mainAll.html %}
+	</div>
+	

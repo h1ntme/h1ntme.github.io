@@ -2,10 +2,8 @@
 title: H1NT.me
 email: root@h1nt.me
 permalink: /:categories/:title
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  Все подсказки для программистов!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://h1nt.me/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
@@ -33,13 +31,15 @@ t:
   link: "/"
   ru:
     lang:    "ru"
-    slogan:  "Все шпаргалки в одном месте"
+    slogan:  "Все подсказки, шпаргалки, клавиатурные сокращения в одном месте. Просто найти и просто использовать. <br> Это то, что вам нужно!"
+    short:  "Мы коллекционируем блаблабла"
     search:  "Поиск"
     all:     "Все"
     about:   "О проекте"
   en:
     lang:    "en"
-    slogan:  "All Cheat Sheets At One Place"
+    slogan:  "Все подсказки, шпаргалки, клавиатурные сокращения в одном месте. Просто найти и просто использовать. <br> Whats what you need!"
+    short:  "We are Collecting all Cheatshits at one Place!"
     search:  "Search"
     all:     "All"
     about:   "About"
