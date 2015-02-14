@@ -92,7 +92,10 @@ body {
 	margin-top: 18px;
 	float:left;
 	}
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 768px) {
+  .card { width: 45%; }
+}
+ @media screen and (max-width: 480px) {
   .card { width: 100%; }
 }
 .table-striped > tbody > tr:nth-child(2n+1) > td {
