@@ -11,6 +11,10 @@ a:link { /*добавил это из-за ссылок в метро*/
 	text-decoration: none; 
 }
 
+.navbar > .container-fluid {
+	padding-left: 0px;
+}
+
 .jumbotron {
 	background-color: #f2f3ee;
 	min-height: 105px;
