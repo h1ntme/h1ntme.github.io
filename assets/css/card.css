@@ -96,6 +96,11 @@ cursor: pointer;
   .card { width: 19%; }
 }
 
- @media screen and (max-width: 1800px) and (min-width: 1170px) {
+ @media screen and (max-width: 1800px) and (min-width: 1400px) {
+.container-hints {width: 1370px}
+  .card { width: 24%; }
+}
+
+ @media screen and (max-width: 1400px) and (min-width: 1170px) {
   .card { width: 24%; }
 }
