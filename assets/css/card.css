@@ -104,7 +104,3 @@ cursor: pointer;
  @media screen and (max-width: 1400px) and (min-width: 1170px) {
   .card { width: 24%; }
 }
-
-.container-hints > .row > .col-md-12 {
-	clear: left;
-}
