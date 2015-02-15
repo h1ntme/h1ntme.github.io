@@ -63,7 +63,33 @@ line-height: 50px;
 text-align: center;
 font-size: 20px;
 vertical-align: middle;
+/*
+	padding: 0;
+	margin: 15px 0 0 0;
+	width: 50px;
+	height: 50px;
+	line-height: 1em;
+	color: #e5e5e5;
+	font-size: 3em;
+	font-weight: bold;
+	background: #5B8FCA;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: inline-block;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+*/
 }
+
 .navbar-brand{
     position: relative;
 }
@@ -72,6 +98,12 @@ border: 0;
 line-height: 30px;
 padding-left: 20px;
 }
+.ad{
+display:inline-block;
+width: 728px;
+float: right;
+}
+
 input:focus {
     border: 1px transparent;
 	outline: none !important;

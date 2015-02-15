@@ -1,3 +1,11 @@
+#cardTable{
+	width:100%;
+}
+.card {
+	width: 30%;
+	margin-top: 18px;
+	float:left;
+	}
 .cardName {
 	display: block;
 	height: 40px;
@@ -9,15 +17,41 @@
 	text-align: center;
 	padding: 10px;	
 	text-transform: uppercase;
+/*
+display: block;
+width: 100%;
+color: #fff;
+background-color: #6e8ec7;
+border-color: #2e6da4;
+text-decoration: none;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+cursor: pointer;
+*/
 }
-.cardName:hover{
+.cardName:hover, .cardName:focus{
+	text-decoration:none;
 	color: #67383e;
 }
 .description {
 	background: #e6e7e2;
 	padding-bottom: 4px;
 }
-
 .description-header {
 	border-bottom: solid 1px #8aa7c7;
 	padding: 0;
@@ -28,31 +62,40 @@
 	font-weight: bold;
 	border-bottom: solid 2px #8aa7c7;
 }
-
 .description-header > span {
 	background: #8aa7c7;
 	display: inline-block;
 	padding: 5px;
 }
-
 .description>.description-header:first-child span {
 	margin-top: -1px;
 }
-
-
-
 .term {
 	display: block;
 	background: #e6e7e2;
 	font-weight: bold;
 	text-indent: 15px;
 }
-
 .definition {
 	width: 98%;
 	margin: 5px auto;
 	background: #fff;
 	color: #000;
-	border-radius: 5px;
 	padding: 5px 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .card { width: 45%; }
+}
+ @media screen and (max-width: 480px) {
+  .card { width: 100%; }
+}
+
+ @media screen and (min-width: 1800px) {
+  .container-hints { width: 1600px; }
+  .card { width: 19%; }
+}
+
+ @media screen and (max-width: 1800px) and (min-width: 1170px) {
+  .card { width: 24%; }
 }
