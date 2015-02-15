@@ -107,6 +107,12 @@ body {
  @media screen and (max-width: 1800px) and (min-width: 1170px) {
   .card { width: 24%; }
 }
+
+.container-hints > .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #ffffff;
 }
