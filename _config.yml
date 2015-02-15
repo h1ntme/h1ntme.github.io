@@ -6,8 +6,7 @@ description: >
   Все подсказки для программистов!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://h1nt.me/" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-#github_username:  jekyll
+twitter_username: H1NTme
 
 # Build settings
 markdown: kramdown
