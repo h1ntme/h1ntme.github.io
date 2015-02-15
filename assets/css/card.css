@@ -101,6 +101,6 @@ cursor: pointer;
   .card { width: 24%; }
 }
 
- @media screen and (max-width: 1400px) and (min-width: 1170px) {
+ @media screen and (max-width: 1400px) and (min-width: 990px) {
   .card { width: 24%; }
 }
