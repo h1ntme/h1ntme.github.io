@@ -103,6 +103,10 @@ body {
   .container-hints { width: 1600px; }
   .card { width: 19%; }
 }
+
+ @media screen and (max-width: 1800px) and (min-width: 1280px) {
+  .card { width: 24%; }
+}
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #ffffff;
 }
