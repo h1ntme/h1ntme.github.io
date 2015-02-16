@@ -104,3 +104,9 @@ cursor: pointer;
  @media screen and (max-width: 1400px) and (min-width: 990px) {
   .card { width: 24%; }
 }
+
+.search-highlight {
+	color: red;
+	font-size: bold;
+	background: yellow;
+}

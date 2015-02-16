@@ -1,6 +1,5 @@
-﻿var searchOnPage = function () {
-	
-	$('input.search').click(function(){		
+﻿var searchOnPage = function () {	
+	$('.ui-autocomplete').click(function(){
 		jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) { //making case insensitive selector
 		return function( elem ) {
         return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
@@ -9,9 +8,10 @@
 		$("article").removeClass("highlight");									//removing previous search result		
 		
 		var searchValue = $('input').val();
+		//console.log(searchValue);
 		
 		if (searchValue.length > 1) {										// more than 1 character
-			$("article:Contains(" + searchValue + ")").addClass("highlight");	//searching on page
+			$("article:Contains(" + searchValue + ")").addClass("search-highlight");	//searching on page
 		} 		
 	});
 }
@@ -27,8 +27,7 @@ $container.masonry({
 
 $(document).ready(function() {	   
   
-  searchOnPage();
-    
+   
 var availableTags = $('div.term').map(function(){
                return $.trim($(this).text());
             }).get();
@@ -40,7 +39,7 @@ $( "#search" ).autocomplete({
   delay: 1000
 });
 
-  
+  searchOnPage();
 	
   $('#close-all').click(function() {
     $(".description").slideUp(300, function() {
