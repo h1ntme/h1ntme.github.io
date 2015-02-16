@@ -1,20 +1,21 @@
 ﻿var searchOnPage = function () {
 	
-	$('div.srch').click(function(){		
+	$('input.search').click(function(){		
 		jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) { //making case insensitive selector
 		return function( elem ) {
         return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
 		};
 	});		
-		$("td").removeClass("highlight");									//removing previous search result		
+		$("article").removeClass("highlight");									//removing previous search result		
 		
 		var searchValue = $('input').val();
 		
 		if (searchValue.length > 1) {										// more than 1 character
-			$("td:Contains(" + searchValue + ")").addClass("highlight");	//searching on page
+			$("article:Contains(" + searchValue + ")").addClass("highlight");	//searching on page
 		} 		
 	});
 }
+
 
 var $container = $('#cardTable');
 // initialize
@@ -27,6 +28,19 @@ $container.masonry({
 $(document).ready(function() {	   
   
   searchOnPage();
+    
+var elems = document.getElementsByClassName( 'term' );
+var availableTags = jQuery.makeArray( elems );
+
+$( availableTags ).appendTo( document.body );
+console.log(availableTags);
+
+$( "#search" ).autocomplete({
+  source: availableTags,
+  minLength: 2
+});
+
+  
 	
   $('#close-all').click(function() {
     $(".description").slideUp(300, function() {

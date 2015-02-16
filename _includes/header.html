@@ -9,12 +9,13 @@
           </button>
         <a class="logo" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}"><img src="/assets/img/logo.png" alt="H1NT.ME"></a>
 				<h1 class="title">{{page.title}}</h1>
-
 		</div>
         
         <div id="navbar" class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
-			<input type="text" placeholder="{{site.t[page.lang].search}}" class="search">
+			<div class="ui-widget">
+			<input type="text" placeholder="{{site.t[page.lang].search}}" class="search" id="search">
+			</div>
 		</ul>
 			<ul class="nav nav-pills navbar-right">
 				<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/share.png"></a></p>
