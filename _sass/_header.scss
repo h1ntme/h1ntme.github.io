@@ -126,3 +126,26 @@ input:focus {
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
+
+.navbar-header > ul.navbar-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-widget {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.ui-widget > input {
+	width: 200px;
+}
+
+@media only screen and (max-width: 420px) {
+	.ui-widget{display: none}
+}
+
+body > .ui-widget-content {
+	z-index: 2000;
+}
