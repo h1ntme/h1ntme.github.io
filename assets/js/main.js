@@ -29,10 +29,9 @@ $(document).ready(function() {
   
   searchOnPage();
     
-var elems = document.getElementsByClassName( 'term' );
-var availableTags = jQuery.makeArray( elems );
-
-$( availableTags ).appendTo( document.body );
+var availableTags = $('div.term').map(function(){
+               return $.trim($(this).text());
+            }).get();
 console.log(availableTags);
 
 $( "#search" ).autocomplete({
