@@ -19,13 +19,14 @@ $( "#search" ).autocomplete({
   source: availableTags,
   minLength: 2,
   delay: 500,
-    select: function( event, ui ) {
+  position:  { my: "left+2", at: "left bottom", collision: "none" },
+  select: function( event, ui ) {
 		$("article").removeClass("search-highlight");
 		$("article:Contains(" + ui.item.label + ")").addClass("search-highlight");
 		var body = $("html, body");
-		var position = $("div.term:Contains(" + ui.item.label + ")").offset().top - 75;		
+		var coord = $("div.term:Contains(" + ui.item.label + ")").offset().top - 75;
 		body.animate({
-			scrollTop: position
+			scrollTop: coord
 		});
 	}
 });
