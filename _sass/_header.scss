@@ -31,19 +31,28 @@ vertical-align: baseline;
 height: 50px;
 color: #7F4551;
 }
-.nav-text{
-padding-left: 10px;
+.nav .nav-text{
+padding: 0 0 0 10px;
 font-size: 18px;
 float: left;
 color: #7F4551;
 width: 50px;
 border-right: 1px solid #7F4551;
+border-radius: 0px;
 }
-.nav-text a{
+.nav .nav-text a{
 color: #7F4551;
+padding: 10px 0 10px;
+border-radius: 0px;
+
 }
-.nav-text a:hover{
+.nav a:hover{
 text-decoration: none;
+background-color: #fff;
+}
+.nav a.nav-text:hover{
+text-decoration: none;
+background-color: #fff;
 }
 ul p:last-of-type{
 border-right: 0px solid #7F4551;
