@@ -37,7 +37,8 @@ console.log(availableTags);
 
 $( "#search" ).autocomplete({
   source: availableTags,
-  minLength: 2
+  minLength: 2,
+  delay: 1000
 });
 
   
