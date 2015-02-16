@@ -22,9 +22,11 @@ $( "#search" ).autocomplete({
     select: function( event, ui ) {
 		$("article").removeClass("search-highlight");
 		$("article:Contains(" + ui.item.label + ")").addClass("search-highlight");
-		
-		$("body").scrollTop($("article:Contains(" + ui.item.label + ")").offset().top - 75);
-		console.log(ui.item.label);
+		var body = $("html, body");
+		var position = $("div.term:Contains(" + ui.item.label + ")").offset().top - 75;		
+		body.animate({
+			scrollTop: position
+		});
 	}
 });
 
