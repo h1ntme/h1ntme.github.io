@@ -663,7 +663,7 @@ categories:
 					<div class="definition">Only work on MySQL
 					</div>
 					</article>
-					<article><header class="description-header">Indexes</header></article>
+					<article><header class="description-header"><span>Indexes</span></header></article>
 					<article>
 					<div class="term">$table->string('column')->unique();</div>
 					<div class="definition"></div>
@@ -725,7 +725,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Column Types</header>
+					<header class="description-header"><span>Column Types</span></header>
 					</article>
 					<article>
 					<div class="term">$table->increments('id');</div>
@@ -1080,7 +1080,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Form elements</header>
+					<header class="description-header"><span>Form elements</span></header>
 					</article>
 					<article>
 					<div class="term">Form::label('id', 'Description');
@@ -1216,7 +1216,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Session Input (flash)</header>
+					<header class="description-header"><span>Session Input (flash)</span></header>
 					</article>
 					<article>
 					<div class="term">Input::flash();
@@ -1239,7 +1239,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Files</header>
+					<header class="description-header"><span>Files</span></header>
 					</article>
 					<article>
 					<div class="term">Input::file('filename');
@@ -1321,7 +1321,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">RESTful Controllers</header>
+					<header class="description-header"><span>RESTful Controllers</span></header>
 					</article>
 					<article>
 					<div class="term">Route::resource('posts','PostsController');</div>
@@ -1336,7 +1336,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Triggering Errors</header>
+					<header class="description-header"><span>Triggering Errors</span></header>
 					</article>
 					<article>
 					<div class="term">App::abort(404);
@@ -1351,7 +1351,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Route Parameters</header>
+					<header class="description-header"><span>Route Parameters</span></header>
 					</article>
 					<article>
 					<div class="term">Route::get('foo/{bar}', function($bar){});
@@ -1362,7 +1362,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">HTTP Verbs</header>
+					<header class="description-header"><span>HTTP Verbs</span></header>
 					</article>
 					<article>
 					<div class="term">Route::any('foo', function(){});
@@ -1389,14 +1389,14 @@ categories:
 					<div class="definition">RESTful actions</div>
 					</article>
 					<article>
-					<header class="description-header">Secure Routes</header>
+					<header class="description-header"><span>Secure Routes</span></header>
 					</article>
 					<article>
 					<div class="term">Route::get('foo', array('https', function(){}));</div>
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Route Constraints</header>
+					<header class="description-header"><span>Route Constraints</span></header>
 					</article>
 					<article>
 					<div class="term">Route::get('foo/{bar}', function($bar){})->where('bar', '[0-9]+');
@@ -1411,7 +1411,7 @@ categories:
 					<div class="definition">Set a pattern to be used across routes</div>
 					</article>
 					<article>
-					<header class="description-header">Filters</header>
+					<header class="description-header"><span>Filters</span></header>
 					</article>
 					<article>
 					<div class="term">Route::filter('auth', function(){});
@@ -1446,7 +1446,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Named Routes</header>
+					<header class="description-header"><span>Named Routes</span></header>
 					</article>
 					<article>
 					<div class="term">Route::currentRouteName();
@@ -1457,7 +1457,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Route Prefixing</header>
+					<header class="description-header"><span>Route Prefixing</span></header>
 					</article>
 					<article>
 					<div class="term">Route::group(array('prefix' => 'foo'), function(){})
@@ -1466,7 +1466,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Route Namespacing</header>
+					<header class="description-header"><span>Route Namespacing</span></header>
 					</article>
 					<article>
 					<div class="term">Route::group(array('namespace' => 'Foo\Bar'), function(){})
@@ -1475,7 +1475,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Sub-Domain Routing</header>
+					<header class="description-header"><span>Sub-Domain Routing</span></header>
 					</article>
 					<article>
 					<div class="term">Route::group(array('domain' => '{sub}.example.com'), function(){});</div>
@@ -2084,7 +2084,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Selects</header>
+					<header class="description-header"><span>Selects</span></header>
 					</article>
 					<article>
 					<div class="term">DB::table('name')->get();
@@ -2159,7 +2159,7 @@ categories:
 					<div class="definition">Joins</div>
 					</article>
 					<article>
-					<header class="description-header">Inserts, Updates, Deletes</header>
+					<header class="description-header"><span>Inserts, Updates, Deletes</span></header>
 					</article>
 					<article>
 					<div class="term">DB::table('name')->insert(array('name' => 'John', 'email' => 'john@example.com'));
@@ -2194,7 +2194,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Aggregates</header>
+					<header class="description-header"><span>Aggregates</span></header>
 					</article>
 					<article>
 					<div class="term">DB::table('name')->count();
@@ -2249,7 +2249,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Raw Expressions</header>
+					<header class="description-header"><span>Raw Expressions</span></header>
 					</article>
 					<article>
 					<div class="term">DB::select('select * from users where id = ?', array('value'));
@@ -2542,7 +2542,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Paths</header>
+					<header class="description-header"><span>Paths</span></header>
 					</article>
 					<article>
 					<div class="term">app_path();</div>
@@ -2564,7 +2564,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Strings</header>
+					<header class="description-header"><span>Strings</span></header>
 					</article>
 					<article>
 					<div class="term">camel_case($value);
@@ -2635,7 +2635,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">URLs and Links</header>
+					<header class="description-header"><span>URLs and Links</span></header>
 					</article>
 					<article>
 					<div class="term">action('FooController@method', $parameters);
@@ -2680,7 +2680,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Miscellaneous</header>
+					<header class="description-header"><span>Miscellaneous</span></header>
 					</article>
 					<article>
 					<div class="term">csrf_token();
@@ -2706,7 +2706,7 @@ categories:
             <section class="description">
                 
 					<article>
-					<header class="description-header">Passwords</header>
+					<header class="description-header"><span>Passwords</span></header>
 					</article>
 					<article>
 					<div class="term">Hash::make('secretpassword');
@@ -2721,7 +2721,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Auth</header>
+					<header class="description-header"><span>Auth</span></header>
 					</article>
 					<article>
 					<div class="term">
@@ -2795,7 +2795,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Encryption</header>
+					<header class="description-header"><span>Encryption</span></header>
 					</article>
 					<article>
 					<div class="term">Crypt::encrypt('secretstring');
@@ -2951,7 +2951,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Soft Delete</header>
+					<header class="description-header"><span>Soft Delete</span></header>
 					</article>
 					<article>
 					<div class="term">Model::withTrashed()->where('cars', 2)->get();</div>
@@ -2970,7 +2970,7 @@ categories:
 					<div class="definition">Force the result set to only included soft deletes</div>
 					</article>
 					<article>
-					<header class="description-header">Events</header>
+					<header class="description-header"><span>Events</span></header>
 					</article>
 					<article>
 					<div class="term">Model::creating(function($model){});
@@ -3013,8 +3013,8 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">
-					Eloquent Configuration</header>
+					<header class="description-header"><span>
+					Eloquent Configuration</span></header>
 					</article>
 					<article>
 					<div class="term">Eloquent::unguard();
@@ -3058,7 +3058,7 @@ categories:
 					<div class="definition">Write all email to logs instead of sending</div>
 					</article>
 					<article>
-					<header class="description-header">Messages</header>
+					<header class="description-header"><span>Messages</span></header>
 					</article>
 					<article>
 					<div class="term">$message->from('email@example.com', 'Mr. Example');
@@ -3126,7 +3126,7 @@ categories:
             <section class="description">
                 
 					<article>
-					<header class="description-header">Install and run</header>
+					<header class="description-header"><span>Install and run</span></header>
 					</article>
 					<article>
 					<div class="term">"phpunit/phpunit": "4.0.*"
@@ -3139,7 +3139,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Asserts</header>
+					<header class="description-header"><span>Asserts</span></header>
 					</article>
 					<article>
 					<div class="term">$this->assertTrue(true);
@@ -3200,7 +3200,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Calling routes</header>
+					<header class="description-header"><span>Calling routes</span></header>
 					</article>
 					<article>
 					<div class="term">$response = $this->call($method, $uri, $parameters, $files, $server, $content);
@@ -3349,7 +3349,7 @@ categories:
 					<div class="definition"></div>
 					</article>
 					<article>
-					<header class="description-header">Rules</header>
+					<header class="description-header"><span>Rules</span></header>
 					</article>
 					<article>
 					<div class="term">accepted
@@ -3515,7 +3515,7 @@ categories:
             <section class="description">
                 
 					<article>
-					<header class="description-header">Executing Commands</header>
+					<header class="description-header"><span>Executing Commands</span></header>
 					</article>
 					<article>
 					<div class="term">SSH::run(array $commands);
@@ -3531,7 +3531,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">Tasks</header>
+					<header class="description-header"><span>Tasks</span></header>
 					</article>
 					<article>
 					<div class="term">SSH::define($taskName, array $commands);</div>
@@ -3548,7 +3548,7 @@ categories:
 					</div>
 					</article>
 					<article>
-					<header class="description-header">SFTP Uploads</header>
+					<header class="description-header"><span>SFTP Uploads</span></header>
 					</article>
 					<article>
 					<div class="term">SSH::put($localFile, $remotePath);
