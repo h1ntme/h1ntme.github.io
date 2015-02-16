@@ -19,7 +19,6 @@ $( "#search" ).autocomplete({
   source: availableTags,
   minLength: 2,
   delay: 500,
-  position:  { my: "left+2", at: "left bottom", collision: "none" },
   select: function( event, ui ) {
 		$("article").removeClass("search-highlight");
 		$("article:Contains(" + ui.item.label + ")").addClass("search-highlight");
