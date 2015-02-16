@@ -1,24 +1,10 @@
-﻿var searchOnPage = function () {	
-	$('.ui-autocomplete').click(function(){
-		jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) { //making case insensitive selector
+﻿	jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) { //making case insensitive selector
 		return function( elem ) {
-        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+        return jQuery(elem).text().indexOf(arg) >= 0;
 		};
-	});		
-		$("article").removeClass("highlight");									//removing previous search result		
-		
-		var searchValue = $('input').val();
-		//console.log(searchValue);
-		
-		if (searchValue.length > 1) {										// more than 1 character
-			$("article:Contains(" + searchValue + ")").addClass("search-highlight");	//searching on page
-		} 		
 	});
-}
-
 
 var $container = $('#cardTable');
-// initialize
 $container.masonry({
   columnWidth: '.card',
   itemSelector: '.card',
@@ -26,21 +12,22 @@ $container.masonry({
 });
 
 $(document).ready(function() {	   
-  
-   
 var availableTags = $('div.term').map(function(){
                return $.trim($(this).text());
             }).get();
-console.log(availableTags);
-
 $( "#search" ).autocomplete({
   source: availableTags,
   minLength: 2,
-  delay: 1000
+  delay: 500,
+    select: function( event, ui ) {
+		$("article").removeClass("search-highlight");
+		$("article:Contains(" + ui.item.label + ")").addClass("search-highlight");
+		
+		$("body").scrollTop($("article:Contains(" + ui.item.label + ")").offset().top - 75);
+		console.log(ui.item.label);
+	}
 });
 
-  searchOnPage();
-	
   $('#close-all').click(function() {
     $(".description").slideUp(300, function() {
     $container.masonry(); });
