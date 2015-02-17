@@ -37,11 +37,11 @@ navigator.vibrate([1000, 500, 1000]);
 
  $('.droppable').hover(
         function () {
-            $('ul.dropzone').slideDown(100);  
+            $('ul.dropzone', this).slideDown(100);  
 
         },
         function () {
-            $('ul.dropzone').slideUp(100);
+            $('ul.dropzone', this).slideUp(100);
         }
     );  
 	
