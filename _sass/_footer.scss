@@ -31,3 +31,9 @@ body {
 	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-weight:bold;
 }
+
+@media only screen and (min-width: 992px) {
+		.pull-md-right {
+		float: right;
+	}
+}
