@@ -11,7 +11,10 @@ $container.masonry({
   "gutter": 10
 });
 
-$(document).ready(function() {	   
+$(document).ready(function() {
+
+$('.definition-link a').text('i');
+	
 var availableTags = $('div.term').map(function(){
                return $.trim($(this).text());
             }).get();
