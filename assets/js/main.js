@@ -35,6 +35,19 @@ $( "#search" ).autocomplete({
 
 window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]); // Vibrate 'SOS' in Morse.
 
+// killing sparrows with the cannon below
+if (location.href === 'http://h1nt.me' || location.href === 'http://h1nt.me/en') {
+	$('.en-link').attr('href','http://h1nt.me/en/');
+	$('.ru-link').attr('href','http://h1nt.me/');
+} else if ($('title').text() === 'О проекте' || $('title').text() === 'About') {
+	$('.en-link').attr('href','http://h1nt.me/en/about/');
+	$('.ru-link').attr('href','http://h1nt.me/ru/about/');
+} else {
+	$('.en-link').attr('href','http://h1nt.me/en' + '/' + $('title').text() + '/');
+	$('.ru-link').attr('href','http://h1nt.me/ru' + '/' + $('title').text() + '/');
+}
+//
+
 $('.droppable').click(
     function() {
       $('ul.dropzone', this).slideToggle(300);
