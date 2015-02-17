@@ -29,7 +29,14 @@ $( "#search" ).autocomplete({
 		});
 	}
 });
+	
+$('li.droppable').click(
+    function() {
+      $('ul', this).slideToggle(300);
+    }
+  );
 
+	
   $('#close-all').click(function() {
     $(".description").slideUp(300, function() {
     $container.masonry(); });

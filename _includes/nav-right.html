@@ -1,6 +1,16 @@
 <ul class="nav nav-pills navbar-right">
-	<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/share.png"></a></p>
-	<p class="nav-text visible-lg-*"><a href="/{{page.lang}}/about"><img src="/assets/img/about.png"></a></p>
-	<p class="nav-text visible-lg-*"><a href="javascript:window.print(); void 0;" target="_blank"><img width="18" src="/assets/img/print.png" alt="Print"></a></p>
-	<p class="nav-text visible-lg-*"><a href="#"><img src="/assets/img/lang.png"></a></p>
+	<li class="nav-text visible-lg-* droppable"><a href="#"><img src="/assets/img/share.png"></a>
+		<ul class="dropzone">
+			<a href="http://vk.com/share.php?url=http://{{site.url}}/{{page.title}}" target="_blank"><li>vk</li></a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://{{site.url}}/{{page.title}}"><li>f</li></a>
+		</ul>
+	</li>
+	<li class="nav-text visible-lg-*"><a href="/{{page.lang}}/about"><img src="/assets/img/about.png"></a></li>
+	<li class="nav-text visible-lg-*"><a href="javascript:window.print(); void 0;" target="_blank"><img width="18" src="/assets/img/print.png" alt="Print"></a></li>
+	<li class="nav-text visible-lg-* droppable"><a href="#"><img src="/assets/img/lang.png"></a>
+		<ul class="dropzone">
+			<a href="/ru/{{page.title}}"><li>ru</li></a>
+			<a href="/en/{{page.title}}"><li>en</li></a>
+		</ul>
+	</li>
 </ul>

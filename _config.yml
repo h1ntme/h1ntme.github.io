@@ -5,7 +5,7 @@ permalink: /:categories/:title
 description: >
   Все подсказки для программистов!
 baseurl: ""
-url: "http://h1nt.me/"
+url: "http://h1nt.me"
 twitter_user: "H1NTme"
 
 # Build settings
