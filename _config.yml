@@ -11,6 +11,8 @@ twitter_user: "H1NTme"
 # Build settings
 markdown: kramdown
 
+sass:
+    style: :compressed
 defaults:
   -
     scope:
