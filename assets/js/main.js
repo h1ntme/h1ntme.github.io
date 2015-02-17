@@ -35,22 +35,11 @@ $( "#search" ).autocomplete({
 
 window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]); // Vibrate 'SOS' in Morse.
 
- $('.droppable').hover(
-        function () {
-            $('ul.dropzone', this).slideDown(100);  
-
-        },
-        function () {
-            $('ul.dropzone', this).slideUp(100);
-        }
-    );  
-	
-/*$('li.droppable').click(
+$('.droppable').click(
     function() {
-      $('ul', this).slideToggle(300);
+      $('ul.dropzone', this).slideToggle(300);
     }
-  );*/
-
+  );
 	
   $('#close-all').click(function() {
     $(".description").slideUp(300, function() {
