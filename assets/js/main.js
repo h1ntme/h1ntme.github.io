@@ -32,6 +32,8 @@ $( "#search" ).autocomplete({
 		});
 	}
 });
+
+navigator.vibrate([1000, 500, 1000]);
 	
 $('li.droppable').click(
     function() {
