@@ -34,12 +34,22 @@ $( "#search" ).autocomplete({
 });
 
 navigator.vibrate([1000, 500, 1000]);
+
+ $('droppable').hover(
+        function () {
+            $('ul.dropzone').slideDown(100);  
+
+        },
+        function () {
+            $('ul.dropzone').slideUp(100);
+        }
+    );  
 	
-$('li.droppable').click(
+/*$('li.droppable').click(
     function() {
       $('ul', this).slideToggle(300);
     }
-  );
+  );*/
 
 	
   $('#close-all').click(function() {
