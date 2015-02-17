@@ -35,7 +35,7 @@ $( "#search" ).autocomplete({
 
 navigator.vibrate([1000, 500, 1000]);
 
- $('droppable').hover(
+ $('.droppable').hover(
         function () {
             $('ul.dropzone').slideDown(100);  
 
