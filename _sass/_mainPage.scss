@@ -92,10 +92,12 @@ a:link { /*добавил это из-за ссылок в метро*/
 	color: #5B8FCA;
 }
 
-.row-others > div > ul > li {
+.row-others>div>ul>li {
 	list-style: none;
 	display: inline-block;
 	margin-left: 5px;	
 	text-transform: uppercase;
 	color: #5B8FCA;
+	border: 1px solid #5B8FC;
+	padding: 5px;
 }
